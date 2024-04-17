@@ -144,60 +144,76 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-direction: row;
+    height: 40vh;
 }
-
 
 .relative {
     width: 300px;
-    height: 190px;
+    height: 180px;
+    background-image: linear-gradient(90deg, rgb(66, 133, 244) -36.98%, rgb(66, 133, 244) 22.31%, rgb(52, 168, 83) 78.95%, rgb(52, 168, 83) 132.93%);
     display: flex;
     align-items: center;
     flex-direction: column;
     position: relative;
-    border: 2px solid yellow;
+    border: 1px solid #fcfcfc;
     border-radius: 0.75rem;
 }
 
 .day {
-    width: 300px;
+    width: 100%;
     height: 150px;
     text-align: center;
     background: #202124;
-    position: absolute;
-    border: 2px solid yellow;
+    /* position: absolute; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* margin: auto; */
+    border: 1px solid #fcfcfc;
     border-radius: 0.75rem;
-    border-top: none;
+    color: #fff;
 }
 
-.day h1 {
+.day h2 {
     font-size: 70px;
     text-transform: uppercase;
-    font-family: 'Aclonica';
-    margin-top: 2rem;
-    margin-bottom: 3rem;
-    background: blue;
-
 }
 
-.day-hsl {
-    width: 300px;
-    background-image: linear-gradient(270deg, rgb(83, 130, 235) 1.91%, rgb(83, 130, 235) 25.69%, rgb(159, 108, 212) 51.37%, rgb(234, 67, 53) 79.9%, rgb(234, 67, 53) 97.02%);
+.day span {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+/* .relative::before {
+    width: 100%;
+    height: 40px;
+    background-image: linear-gradient(90deg, rgb(66, 133, 244) -36.98%, rgb(66, 133, 244) 22.31%, rgb(52, 168, 83) 78.95%, rgb(52, 168, 83) 132.93%);
     position: absolute;
+    background-color: #b90b0b;
+    border: 2px solid #fcfcfc;
+    border-radius: 4px;
+} */
+
+.relative::after {
+    content: '';
+    position: absolute;
+    bottom: -19px;
+    width: 299px;
     height: 20px;
-    bottom: 16px;
-    border: 2px solid yellow;
+    background-image: linear-gradient(90deg, rgb(66, 133, 244) -36.98%, rgb(66, 133, 244) 22.31%, rgb(52, 168, 83) 78.95%, rgb(52, 168, 83) 132.93%);
+    border: 1px solid #fcfcfc;
     border-top: none;
-    border-radius: ;
+    border-radius: 0 0 10px 10px;
 }
 
-.day-hsl-2 {
-    width: 300px;
-    background-color: #1ad6d9;
-    position: absolute;
+/* .day-hsl-2 {
+    width: 100%;
     height: 20px;
+    position: absolute;
     bottom: 0;
-    border: 2px solid yellow;
-    border-radius: 0.75rem;
-    border-top: 0;
-}
+    left: 0;
+    border: 2px solid #fcfcfc;
+    border-radius: 6px;
+    border-top: none;
+    background-color: azure;
+} */
