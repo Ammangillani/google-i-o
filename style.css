@@ -140,7 +140,6 @@ body {
 }
 
 .timer-wrapper {
-    font-size: 40px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -149,7 +148,7 @@ body {
 
 .relative {
     width: 300px;
-    height: 180px;
+    height: 190px;
     background-image: linear-gradient(90deg, rgb(66, 133, 244) -36.98%, rgb(66, 133, 244) 22.31%, rgb(52, 168, 83) 78.95%, rgb(52, 168, 83) 132.93%);
     display: flex;
     align-items: center;
@@ -164,11 +163,6 @@ body {
     height: 150px;
     text-align: center;
     background: #202124;
-    /* position: absolute; */
-    bottom: 0;
-    left: 0;
-    right: 0;
-    /* margin: auto; */
     border: 1px solid #fcfcfc;
     border-radius: 0.75rem;
     color: #fff;
@@ -184,21 +178,12 @@ body {
     text-transform: uppercase;
 }
 
-/* .relative::before {
-    width: 100%;
-    height: 40px;
-    background-image: linear-gradient(90deg, rgb(66, 133, 244) -36.98%, rgb(66, 133, 244) 22.31%, rgb(52, 168, 83) 78.95%, rgb(52, 168, 83) 132.93%);
-    position: absolute;
-    background-color: #b90b0b;
-    border: 2px solid #fcfcfc;
-    border-radius: 4px;
-} */
 
 .relative::after {
     content: '';
     position: absolute;
-    bottom: -19px;
-    width: 299px;
+    bottom: 17px;
+    width: 100%;
     height: 20px;
     background-image: linear-gradient(90deg, rgb(66, 133, 244) -36.98%, rgb(66, 133, 244) 22.31%, rgb(52, 168, 83) 78.95%, rgb(52, 168, 83) 132.93%);
     border: 1px solid #fcfcfc;
@@ -206,14 +191,17 @@ body {
     border-radius: 0 0 10px 10px;
 }
 
-/* .day-hsl-2 {
-    width: 100%;
-    height: 20px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    border: 2px solid #fcfcfc;
-    border-radius: 6px;
-    border-top: none;
-    background-color: azure;
-} */
+.relative:nth-child(2),
+.relative:nth-child(2)::after {
+    background-image: linear-gradient(270deg, rgb(255, 203, 50) 6.94%, rgb(255, 203, 50) 27.99%, rgb(52, 168, 83) 73.59%, rgb(52, 168, 83) 94.64%)
+}
+
+.relative:nth-child(3),
+.relative:nth-child(3)::after {
+    background-image: linear-gradient(90deg, rgb(255, 203, 50) -0.15%, rgb(255, 203, 50) 17.85%, rgb(244, 104, 49) 52.85%, rgb(234, 67, 53) 78.85%, rgb(234, 67, 53) 99.85%);
+}
+
+.relative:nth-child(4),
+.relative:nth-child(4)::after {
+    background-image: linear-gradient(270deg, rgb(83, 130, 235) 1.91%, rgb(83, 130, 235) 25.69%, rgb(159, 108, 212) 51.37%, rgb(234, 67, 53) 79.9%, rgb(234, 67, 53) 97.02%);
+}
