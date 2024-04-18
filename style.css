@@ -210,9 +210,9 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-    /* gap: 100px; */
-    justify-content: space-around;
-
+    justify-content: center;
+    padding: 1rem;
+    gap: 50px;
 }
 
 .wrapeer-one {
@@ -227,7 +227,7 @@ body {
 .wrpper-content {
     width: 50%;
     height: 70%;
-    padding: 2rem;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -274,8 +274,8 @@ body {
 }
 
 .io-content {
-    height: 70%;
-    /* padding: 2rem; */
+    height: 55%;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -305,12 +305,14 @@ body {
 }
 
 .io-img {
-    display: flex;
-    align-items: flex-end;
+    position: relative;
 }
 
 .io-img img {
     height: 240px;
     width: 240px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 
 }
