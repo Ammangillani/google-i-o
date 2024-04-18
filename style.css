@@ -61,12 +61,18 @@ body {
 
 .nav-button button {
     font-size: 16px;
-    padding: 8px 24px;
+    padding: 10px 24px;
     border-radius: 35px;
     text-transform: capitalize;
-    color: #444;
+    color: #000;
     background-color: #fff;
     border: none;
+    cursor: pointer;
+}
+
+.nav-button button:hover {
+    background-color: #80868B;
+
 }
 
 .nav-select select {
@@ -77,6 +83,12 @@ body {
     color: #fff;
     outline-color: #2563EB;
     outline-width: 1px;
+}
+
+hr {
+    height: 2px;
+    background-color: #fff;
+
 }
 
 .hero {
@@ -139,15 +151,19 @@ body {
     height: auto;
 }
 
+.second {
+    padding: 3rem;
+}
+
 .timer-wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 40vh;
 }
 
 .relative {
-    width: 300px;
+    width: 280px;
     height: 190px;
     background-image: linear-gradient(90deg, rgb(66, 133, 244) -36.98%, rgb(66, 133, 244) 22.31%, rgb(52, 168, 83) 78.95%, rgb(52, 168, 83) 132.93%);
     display: flex;
@@ -210,28 +226,28 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    gap: 50px;
+    justify-content: space-between;
 }
 
 .wrapeer-one {
-    width: 60%;
+    width: 65%;
     height: 460px;
     display: flex;
     border: 2px solid #fcfcfc;
     border-radius: 0.80rem;
+    flex-direction: column;
+    justify-content: space-between;
 
 }
 
 .wrpper-content {
-    width: 50%;
-    height: 70%;
-    padding: 1.5rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     justify-content: space-between;
     color: #fff;
+    gap: 28px;
 
 }
 
@@ -241,7 +257,7 @@ body {
 }
 
 .wrpper-content span {
-    font-size: 20px;
+    font-size: 17px;
 
 }
 
@@ -257,62 +273,54 @@ body {
 }
 
 .wrpper-img {
+    width: 100%;
+    height: 203px;
     display: flex;
     align-items: flex-end;
+    justify-content: flex-end;
 }
 
 
 
 .wrapeer-two {
-    width: 30%;
+    width: 32%;
     height: 460px;
     display: flex;
     justify-content: space-between;
     border: 2px solid #fcfcfc;
     border-radius: 0.80rem;
-
-}
-
-.io-content {
-    height: 55%;
-    padding: 2rem;
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    color: #fff;
-
-}
-
-.io-content p {
-    font-size: 34px;
-
-}
-
-.io-content span {
-    font-size: 13px;
-
-}
-
-.io-content button {
-    width: 180px;
-    padding: 12px;
-    font-size: 20px;
-    border-radius: 35px;
-    background: transparent;
-    color: #fff;
-    border: 2px solid #fff;
-
 }
 
 .io-img {
-    position: relative;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .io-img img {
-    height: 240px;
-    width: 240px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    width: 198px;
+    height: 199px;
+}
+
+footer {
+    padding: 2rem;
+}
+
+.footer-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-nav img {
+    width: 180px;
+    height: 20px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #9AA0A6;
+    margin: 0 0 0 24px;
 
 }
