@@ -96,3 +96,54 @@ hr {
     background-color: #fff;
 
 }
+
+
+.wrapeer-one {
+    width: 100%;
+    height: 410px;
+    display: flex;
+    border-bottom: 1px solid #fcfcfc;
+    justify-content: space-between;
+
+}
+
+.wrpper-content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #fff;
+    gap: 28px;
+
+}
+
+.wrpper-content h1 {
+    font-size: 100px;
+
+}
+
+.wrpper-content span {
+    font-size: 20px;
+
+}
+
+.wrpper-content button {
+    padding: 12px;
+    font-size: 20px;
+    border-radius: 35px;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    cursor: pointer;
+
+}
+
+.wrpper-content button:hover {
+    background: #EEEEEE;
+    color: #000;
+}
+
+.wrpper-img {
+    display: flex;
+    align-items: flex-start;
+}
