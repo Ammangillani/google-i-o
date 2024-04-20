@@ -2,3 +2,97 @@
     margin: 0;
     padding: 0;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sans Regular';
+}
+
+@font-face {
+    font-family: 'Sans Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Sans  Regular'), url(./assest/google-sans-cufonfonts-webfont/ProductSans-Medium.woff) format('woff');
+}
+
+
+body {
+    background: #fff;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: #202124;
+    overflow-x: hidden;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 18px;
+}
+
+.nav-strart {
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navigation {
+    width: 12vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navigation a,
+.nav-end a {
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #e8eaed;
+}
+
+.nav-end {
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-button button {
+    font-size: 16px;
+    padding: 10px 24px;
+    border-radius: 35px;
+    text-transform: capitalize;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-button button:hover {
+    background-color: #80868B;
+
+}
+
+.nav-select select {
+    font-size: 16px;
+    padding: 8px 25px 8px 16px;
+    background: #202124;
+    border: none;
+    color: #fff;
+    outline-color: #2563EB;
+    outline-width: 1px;
+}
+
+hr {
+    height: 2px;
+    background-color: #fff;
+
+}
