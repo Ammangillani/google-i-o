@@ -358,6 +358,18 @@ footer {
     border-bottom: 1px solid #9AA0A6;
     padding-left: 0;
     line-height: 16px;
+    -webkit-appearance: none;
+    /* Hides the default arrow */
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
+    /* Set your icon here */
+    background-size: 1.5rem 1.5rem;
+    /* Adjust size as needed */
+    background-repeat: no-repeat;
+    background-position: right .5rem center;
+    padding-right: 2.5rem;
+    Ensures the icon is visible
 }
 
 .footer-icon {
