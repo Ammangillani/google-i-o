@@ -28,7 +28,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px 18px;
+    padding: 12px 18px;
 }
 
 .nav-strart {
@@ -84,6 +84,14 @@ body {
     color: #fff;
     outline-color: #2563EB;
     outline-width: 1px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
+    background-size: 1.5rem;
+    background-repeat: no-repeat;
+    background-position: right .5rem center;
+    padding-right: 2.5rem;
 }
 
 hr {
@@ -106,19 +114,18 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-    padding: 24px;
+    padding: 52px 24px;
 
 }
 
-.hero-content {
+.hero-content p {
     font-size: 44px;
     color: #fff;
 
 }
 
 .hero-btn p {
-    font-size: 19px;
+    font-size: 20px;
     color: #fff;
     padding: 20px 0;
 }
@@ -126,11 +133,11 @@ hr {
 .hero-btn button {
     min-width: 157px;
     font-size: 20px;
-    padding: 12px 28px;
+    padding: 16px 28px;
     border-radius: 35px;
     text-transform: capitalize;
     color: #fff;
-    background-color: #2563EB;
+    background-color: #4285F4;
     border: none;
     cursor: pointer;
 }
@@ -359,17 +366,13 @@ footer {
     padding-left: 0;
     line-height: 16px;
     -webkit-appearance: none;
-    /* Hides the default arrow */
     -moz-appearance: none;
     appearance: none;
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
-    /* Set your icon here */
-    background-size: 1.5rem 1.5rem;
-    /* Adjust size as needed */
+    background-size: 1.5rem;
     background-repeat: no-repeat;
     background-position: right .5rem center;
     padding-right: 2.5rem;
-    Ensures the icon is visible
 }
 
 .footer-icon {
