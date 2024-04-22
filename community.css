@@ -316,12 +316,12 @@ hr {
 
 .wrpper-img {
     width: 100%;
-    height: 203px;
-    display: flex;
-
 }
 
-
+.wrpper-img img {
+    width: 100%;
+    height: 100%;
+}
 
 .wrapeer-two {
     width: 32%;
@@ -331,6 +331,44 @@ hr {
     border: 2px solid #fcfcfc;
     border-radius: 0.80rem;
     flex-direction: column;
+}
+
+.io-content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: #fff;
+    gap: 28px;
+
+}
+
+.io-content p {
+    font-size: 44px;
+
+}
+
+.io-content span {
+    font-size: 20px;
+
+}
+
+.io-content button {
+    width: 180px;
+    padding: 12px;
+    font-size: 20px;
+    border-radius: 35px;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    cursor: pointer;
+
+}
+
+.wrpper-content button:hover {
+    background: #EEEEEE;
+    color: #000;
 }
 
 .io-img {
@@ -343,8 +381,8 @@ hr {
     width: 198px;
     height: 199px;
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 1px;
+    right: 1px;
 }
 
 footer {
