@@ -192,3 +192,54 @@ hr {
     font-size: 16px;
     color: #000;
 }
+
+.card-wrapper {
+    width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.card {
+    width: 380px;
+    height: 390px;
+    background: #EEEEEE;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    border: 1px solid #fcfcfc;
+    border-radius: 40px;
+}
+
+.card-img img {
+    width: 377px;
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+}
+
+.card-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 32px;
+    text-align: center;
+    color: #202124;
+}
+
+.card-content span {
+    font-size: 24px;
+
+}
+
+.card-content a {
+    color: #202124;
+    font-size: 20px;
+    text-transform: capitalize;
+}
