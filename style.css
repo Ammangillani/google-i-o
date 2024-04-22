@@ -28,14 +28,20 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 12px 18px;
+    padding: 12px 32px 12px 12px;
+    margin: 0 0 0 12px;
 }
 
 .nav-strart {
-    width: 30vw;
+    width: 25vw;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.nav-svg a {
+    display: flex;
+    align-items: center;
 }
 
 .navigation {
@@ -48,24 +54,28 @@ body {
 .navigation a,
 .nav-end a {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 15px;
     text-transform: capitalize;
     color: #e8eaed;
 }
 
+.nav-end a {
+    color: #fff;
+}
+
 .nav-end {
-    width: 30vw;
+    width: 25vw;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .nav-button button {
-    font-size: 16px;
+    font-size: 15px;
     padding: 10px 24px;
     border-radius: 35px;
     text-transform: capitalize;
-    color: #000;
+    color: #202124;
     background-color: #fff;
     border: none;
     cursor: pointer;
@@ -77,7 +87,7 @@ body {
 }
 
 .nav-select select {
-    font-size: 16px;
+    font-size: 15px;
     padding: 8px 25px 8px 16px;
     background: #202124;
     border: none;
