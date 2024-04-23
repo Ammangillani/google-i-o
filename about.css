@@ -121,25 +121,25 @@ hr {
 }
 
 .wrapper-content {
-    width: 35%;
+    width: 500px;
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     color: #fff;
-    gap: 28px;
+    gap: 20px;
 
 }
 
 .wrapper-content h1 {
-    font-size: 98px;
+    font-size: 100px;
     /* letter-spacing: .25px; */
 
 }
 
-.wrapper-content span {
-    font-size: 24px;
+.wrapper-content p {
+    font-size: 20px;
     line-height: 1.5;
 
 }
