@@ -177,6 +177,7 @@ hr {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    gap: 40px;
 }
 
 .card-content {
@@ -196,13 +197,12 @@ hr {
     margin: 0 0 12px 0;
 }
 
-.card-content figcaption span {
+.card-content figcaption span,
+a {
     font-size: 18px;
     color: #fff;
 }
 
-.card-content figcaption a {
+.card-content figcaption #span {
     font-size: 18px;
-    color: #fff;
-    margin: 12px 0 0 0;
 }
