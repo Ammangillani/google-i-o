@@ -121,8 +121,8 @@ hr {
 }
 
 .wrapper-content {
-    width: 500px;
-    padding: 1.5rem;
+    width: 560px;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -134,12 +134,12 @@ hr {
 
 .wrapper-content h1 {
     font-size: 100px;
-    /* letter-spacing: .25px; */
+    letter-spacing: .25px;
 
 }
 
 .wrapper-content p {
-    font-size: 20px;
+    font-size: 22px;
     line-height: 1.5;
 
 }
@@ -153,5 +153,56 @@ hr {
 
 .wrapper-img img {
     width: 850px;
+    height: 370px;
+    object-fit: contain;
+}
+
+.main {
+    padding: 2rem;
+}
+
+.card {
+    width: 100%;
+}
+
+.header p {
+    font-size: 64px;
+    color: #e8eaed;
+    margin-bottom: 2rem;
+}
+
+.card-wrapper {
+    padding: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-content {
+    width: 600px;
+}
+
+.card-content figure img {
+    width: 100%;
+    object-fit: contain;
     height: 350px;
+
+}
+
+.card-content figcaption p {
+    font-size: 24px;
+    color: #fff;
+    margin: 0 0 12px 0;
+}
+
+.card-content figcaption span {
+    font-size: 18px;
+    color: #fff;
+}
+
+.card-content figcaption a {
+    font-size: 18px;
+    color: #fff;
+    margin: 12px 0 0 0;
 }
