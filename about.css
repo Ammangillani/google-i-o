@@ -208,18 +208,18 @@ a {
 }
 
 .scrollspy {
+    width: 100%;
     display: flex;
     gap: 30px;
+    justify-content: space-between;
     position: relative;
+    margin-top: 2rem;
 }
 
 
 
 .scrollspy-aside {
-    flex: 0 0 250px;
-    position: sticky;
-    top: 0;
-    overflow-y: auto;
+    width: 30%;
 }
 
 .aside-header h2 {
@@ -229,13 +229,12 @@ a {
 }
 
 .navbar {
-    background-color: #333;
     color: #fff;
 }
 
 .navbar-nav {
     list-style-type: none;
-    padding: 10px 20px;
+    padding: 20px 0;
 }
 
 .nav-item {
@@ -265,7 +264,7 @@ a {
 }
 
 .scrollspy-content-wrapper {
-    flex: 1;
+    width: 60%;
 }
 
 .section {
@@ -275,6 +274,10 @@ a {
 }
 
 .scrollspy-content {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
     padding: 2rem;
 }
 
@@ -295,9 +298,12 @@ a {
 
 .content-paragraph p {
     font-size: 16px;
+    margin: 1rem 0;
+    line-height: 1.6;
 }
 
 .content-paragraph strong {
     font-size: 24px;
     font-weight: 400;
+
 }
