@@ -206,3 +206,101 @@ a {
 .card-content figcaption #span {
     font-size: 18px;
 }
+
+/* scrollspy */
+
+.scrollspy {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+}
+
+.scrollspy-aside {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 20px;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+    /* Add a transition effect for smooth color change */
+}
+
+.nav-link:hover {
+    color: #f0f0f0;
+    /* Change color on hover */
+}
+
+.nav-link.active {
+    color: #ff0000;
+    /* Change color for active link */
+}
+
+.scrollspy-content-wrapper {}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 870px;
+    border: 2px solid #fcfcfc;
+    border-radius: 0.75rem;
+}
+
+.scrollspy-content {
+    padding: 1.4rem;
+}
+
+.content-paragraph {
+    background: transparent;
+    padding: 14px 48px 14px 0;
+    border-bottom: 2px solid yellow;
+}
+
+.content-heading {
+    display: flex;
+    align-items: center;
+    padding: 1.4rem;
+    font-size: 44px;
+    color: #202124;
+    background: linear-gradient(90deg, #4285F4 -36.98%, #4285F4 22.31%, #34A853 78.95%, #34A853 132.93%);
+    border-radius: 0.75rem;
+}
+
+.section:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+
+.section:nth-child(even) {
+    background-color: #ccc;
+}
+
+.section h2 {
+    margin-top: 0;
+}
