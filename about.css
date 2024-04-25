@@ -238,17 +238,19 @@ a {
 }
 
 .nav-item {
-    width: 160px;
+    width: fit-content;
     margin-right: 20px;
-    padding: 12px 20px;
+    padding: 20px 30px;
     border: 2px solid #fff;
     margin: 16px 0;
-    border-radius: 0.75rem;
+    border-radius: 8px;
     text-align: left;
+    line-height: 24px;
 }
 
 .nav-link {
-    font-size: 16px;
+    letter-spacing: 0.85px;
+    font-size: 20px;
     font-weight: 400;
     text-decoration: none;
     color: #fff;
@@ -285,11 +287,15 @@ a {
 
 .content-heading {
     padding: 2rem;
-    font-size: 44px;
     color: #202124;
     background: linear-gradient(90deg, #4285F4 -36.98%, #4285F4 22.31%, #34A853 78.95%, #34A853 132.93%);
     border-radius: 10px 10px 0 0;
     border-bottom: 2px solid #fcfcfc;
+}
+
+.content-heading h2 {
+    font-size: 44px;
+    font-weight: 400;
 }
 
 .content-paragraph {
