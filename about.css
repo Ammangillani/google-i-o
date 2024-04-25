@@ -238,11 +238,13 @@ a {
 }
 
 .nav-item {
+    width: 160px;
     margin-right: 20px;
     padding: 12px 20px;
     border: 2px solid #fff;
     margin: 16px 0;
     border-radius: 0.75rem;
+    text-align: left;
 }
 
 .nav-link {
