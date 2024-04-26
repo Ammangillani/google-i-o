@@ -207,82 +207,74 @@ a {
     font-size: 18px;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 .scrollspy {
-    width: 100%;
     display: flex;
     gap: 30px;
-    justify-content: space-between;
-    position: relative;
     margin-top: 2rem;
 }
 
-
-
 .scrollspy-aside {
-    width: 30%;
+    flex: 0 0 30%;
+    /* Set initial width to 30%, don't allow shrinking or growing */
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: #333;
+    color: #fff;
 }
 
 .aside-header h2 {
-    font-size: 64px;
-    color: #fff;
+    font-size: 24px;
     font-weight: 400;
-}
-
-.navbar {
-    color: #fff;
+    padding: 20px;
+    margin: 0;
 }
 
 .navbar-nav {
     list-style-type: none;
-    padding: 20px 0;
+    padding: 0;
+    margin: 20px 0;
 }
 
 .nav-item {
-    width: fit-content;
-    margin-right: 20px;
-    padding: 20px 30px;
-    border: 2px solid #fff;
-    margin: 16px 0;
-    border-radius: 8px;
-    text-align: left;
-    line-height: 24px;
+    margin: 0;
 }
 
 .nav-link {
-    letter-spacing: 0.85px;
-    font-size: 20px;
-    font-weight: 400;
+    display: block;
+    padding: 10px 20px;
     text-decoration: none;
     color: #fff;
-    transition: color 0.3s;
-
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .nav-link:hover {
-    color: #f00505;
+    background-color: #f00505;
+    color: #fff;
 }
 
-.nav-link.active,
-.nav-link:hover.active {
-    color: #0ef087;
+.nav-link.active {
+    background-color: #333;
+    color: #fff;
 }
 
 .scrollspy-content-wrapper {
-    width: 60%;
+    flex: 1;
+    /* Allow this element to grow and take up remaining space */
+    padding: 0 20px;
 }
 
 .section {
     border: 2px solid #fcfcfc;
     border-radius: 0.75rem;
     margin-bottom: 20px;
-}
-
-.scrollspy-content {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 30px;
-    padding: 2rem;
 }
 
 .content-heading {
@@ -296,12 +288,13 @@ a {
 .content-heading h2 {
     font-size: 44px;
     font-weight: 400;
+    margin: 0;
 }
 
 .content-paragraph {
-    padding: 14px 48px 14px 0;
+    padding: 1rem 2rem;
     border-bottom: 2px solid #fcfcfc;
-    color: #fff;
+    color: #333;
 }
 
 .content-paragraph p {
@@ -314,5 +307,22 @@ a {
 .content-paragraph strong {
     font-size: 24px;
     font-weight: 400;
+}
 
+@media (max-width: 768px) {
+    .scrollspy {
+        flex-direction: column;
+    }
+
+    .scrollspy-aside {
+        width: 100%;
+        position: relative;
+        height: auto;
+        overflow-y: visible;
+        margin-bottom: 20px;
+    }
+
+    .scrollspy-content-wrapper {
+        width: 100%;
+    }
 }
