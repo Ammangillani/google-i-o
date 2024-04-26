@@ -1,19 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const sections = document.querySelectorAll(".section");
   const navLinks = document.querySelectorAll(".nav-link");
 
   window.addEventListener("scroll", function () {
-    let fromTop = window.scrollY;
+    let current = "";
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      if (pageYOffset >= sectionTop - sectionHeight / 6) {
+        current = section.getAttribute("id");
+      }
+    });
 
     navLinks.forEach((link) => {
-      const section = document.querySelector(link.hash);
-
-      if (
-        section.offsetTop <= fromTop &&
-        section.offsetTop + section.offsetHeight > fromTop
-      ) {
+      link.classList.remove("active");
+      if (link.getAttribute("href").includes(current)) {
         link.classList.add("active");
-      } else {
-        link.classList.remove("active");
       }
     });
   });
