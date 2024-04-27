@@ -208,7 +208,7 @@ a {
 }
 
 .scrollspy {
-    width: 100%;
+    width: 100vw;
     display: flex;
     gap: 30px;
     justify-content: space-between;
@@ -219,7 +219,7 @@ a {
 
 
 .scrollspy-aside {
-    width: 30%;
+    width: 30vw;
     position: sticky;
     top: 0;
     left: 0;
@@ -273,10 +273,11 @@ a {
 }
 
 .scrollspy-content-wrapper {
-    width: 60%;
+    width: 60vw;
 }
 
 .section {
+    width: 100%;
     border: 2px solid #fcfcfc;
     border-radius: 0.75rem;
     margin-bottom: 20px;
@@ -286,7 +287,7 @@ a {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    gap: 30px;
+    gap: 40px;
     padding: 2rem;
 }
 
