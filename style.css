@@ -396,3 +396,53 @@ footer {
     font-size: 25px;
     color: #9AA0A6;
 }
+
+@media (max-width:768px) {
+    .hero-content p {
+        font-size: 34px;
+        color: #fff;
+        line-height: 1.1;
+        text-align: center;
+
+
+    }
+
+    .hero-btn p {
+        font-size: 16px;
+        color: #fff;
+        padding: 20px 0;
+    }
+
+    .hero-btn button {
+        min-width: 157px;
+        font-size: 20px;
+        padding: 16px 28px;
+        border-radius: 35px;
+        text-transform: capitalize;
+        color: #fff;
+        background-color: #4285F4;
+        border: none;
+        cursor: pointer;
+    }
+
+    .hero-btn button:hover {
+        background-color: #8AB4F8;
+    }
+
+    .hero-top-img {
+        width: 350;
+        height: auto;
+
+    }
+
+    .hero-top-img img {
+        width: 100%;
+
+    }
+
+    .hero-bottom-img img {
+        width: 98vw;
+        height: auto;
+    }
+
+}
