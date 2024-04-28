@@ -414,9 +414,9 @@ footer {
     }
 
     .hero-btn button {
-        min-width: 157px;
-        font-size: 20px;
-        padding: 16px 28px;
+        min-width: 0;
+        font-size: 16px;
+        padding: 10px 28px;
         border-radius: 35px;
         text-transform: capitalize;
         color: #fff;
@@ -430,7 +430,7 @@ footer {
     }
 
     .hero-top-img {
-        width: 350;
+        width: 350px;
         height: auto;
 
     }
