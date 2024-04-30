@@ -336,11 +336,10 @@ hr {
 
 .card {
     width: 100%;
-    padding: 1rem 0;
     display: flex;
-    gap: 30px;
+    gap: 60px;
     align-items: flex-start;
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
 .card-header {
@@ -357,6 +356,7 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
 
 .figure {
