@@ -437,6 +437,7 @@ hr {
 .last-wrapper-anchors a {
     display: flex;
     width: 335px;
+    height: 310px;
     text-decoration: none;
 }
 
@@ -466,7 +467,14 @@ img {
     line-height: 1.6;
 }
 
-.last-wrapper-anchors a:hover {}
+.last-wrapper-anchors a:hover {
+    border: 2px solid #ffffff;
+    border-radius: 0.75rem;
+}
+
+.last-wrapper-anchors a:hover img {
+    filter: invert(100%);
+}
 
 
 
