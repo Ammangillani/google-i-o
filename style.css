@@ -360,12 +360,48 @@ hr {
 }
 
 .figure {
-    width: 480px;
+    width: 440px;
     height: 460px;
+    color: #ffffff;
 }
 
 .figure figure img {
-    width: 460px;
+    width: 430px;
+}
+
+.figure figcaption span {
+    font-size: 12px;
+    margin: 10px 0 10px 0;
+    display: block;
+}
+
+.figure figcaption h6 {
+    font-size: 20px;
+    margin: 10px 0 10px 0;
+    font-weight: 400;
+}
+
+.figure figcaption p {
+    font-size: 16px;
+    margin: 10px 0 0 0;
+    line-height: 1.7;
+}
+
+.figure-icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    margin: 20px 0 0 0;
+}
+
+.icon-svg {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    font-size: 16px;
+    color: #ffffff;
 }
 
 footer {
