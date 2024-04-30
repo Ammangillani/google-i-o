@@ -327,11 +327,45 @@ hr {
 }
 
 .io-img img {
-    width: 198px;
-    height: 199px;
+    width: 252px;
+    height: 170px;
     position: absolute;
     bottom: 0;
     right: 0;
+}
+
+.card {
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    margin-top: 2rem;
+}
+
+.card-header {
+    width: 305px;
+    color: #fcfcfc;
+}
+
+.card-header h2 {
+    font-size: 44px;
+    font-weight: 400;
+}
+
+.figures-card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.figure {
+    width: 480px;
+    height: 460px;
+}
+
+.figure figure img {
+    width: 460px;
 }
 
 footer {
@@ -397,6 +431,8 @@ footer {
     color: #9AA0A6;
 }
 
+
+/* --------------------Media Qureis------------------ */
 @media (max-width:768px) {
     .hero-content p {
         font-size: 34px;
