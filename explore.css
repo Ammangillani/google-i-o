@@ -164,3 +164,79 @@ hr {
     width: 640px;
     height: 408px;
 }
+
+.explore {
+    padding: 3rem 3rem;
+}
+
+.last-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+    margin: 5rem 0;
+}
+
+.last-wrapper-header {
+    display: flex;
+    align-items: flex-start;
+}
+
+.last-wrapper-header h2 {
+    font-size: 48px;
+    color: #ffffff;
+    font-weight: 400;
+
+}
+
+.last-wrapper-anchors {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.last-wrapper-anchors a {
+    display: flex;
+    width: 335px;
+    height: 310px;
+    text-decoration: none;
+}
+
+.anchor-figures {
+    width: 327px;
+    padding: 12px;
+    color: #ffffff;
+
+}
+
+.anchor-figures figure,
+img {
+    width: 303px;
+    height: auto;
+}
+
+.anchor-figures figcaption p {
+    font-size: 20px;
+    margin: 10px 0;
+    text-transform: capitalize;
+
+}
+
+.anchor-figures figcaption span {
+    font-size: 16px;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.last-wrapper-anchors a:hover {
+    border: 2px solid #ffffff;
+    border-radius: 0.75rem;
+}
+
+.last-wrapper-anchors a:hover img {
+    filter: invert(100%);
+}
