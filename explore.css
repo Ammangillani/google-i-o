@@ -179,12 +179,21 @@ hr {
 }
 
 .last-wrapper-header {
+    width: 100%;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .last-wrapper-header h2 {
     font-size: 48px;
+    color: #ffffff;
+    font-weight: 400;
+
+}
+
+.last-wrapper-header a {
+    font-size: 20px;
     color: #ffffff;
     font-weight: 400;
 
