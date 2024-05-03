@@ -249,3 +249,63 @@ img {
 .last-wrapper-anchors a:hover img {
     filter: invert(100%);
 }
+
+.reomendation-wrapper,
+.recomendetion-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.recomendetion-header {
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.recomendetion-header h6 {
+    font-size: 2.75rem;
+
+}
+
+.recomendetion-header p {
+    font-size: 1.3rem;
+}
+
+.recomendetion-header a {
+    color: inherit;
+
+}
+
+.recomendation-box-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 100px;
+}
+
+.recomendation-box:nth-child(1) {
+    padding: 24px;
+    background-color: #EEEEEE;
+    border-radius: 10px 0 0 10px;
+}
+
+.recomendation-box:nth-child(2) {
+    padding: 24px;
+    background-color: #EEEEEE;
+    border-radius: 0 10px 10px 0;
+}
+
+.recomendation-box-content {
+    display: flex;
+    align-items: center;
+
+}
+
+.recomendation-box-content p {
+    font-size: 24px;
+}
+
+.recomendation-box-content img {
+    width: 56px;
+    height: auto;
+}
