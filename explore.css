@@ -280,16 +280,18 @@ img {
 .recomendation-box-wrapper {
     width: 100%;
     display: flex;
-    gap: 100px;
+    gap: 10px;
 }
 
 .recomendation-box:nth-child(1) {
+    min-width: 440px;
     padding: 24px;
     background-color: #EEEEEE;
     border-radius: 10px 0 0 10px;
 }
 
 .recomendation-box:nth-child(2) {
+    min-width: 890px;
     padding: 24px;
     background-color: #EEEEEE;
     border-radius: 0 10px 10px 0;
