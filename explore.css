@@ -281,25 +281,33 @@ img {
     width: 100%;
     display: flex;
     gap: 10px;
+    color: #202124;
+}
+
+.recomendation-box {
+    min-height: 133px;
+    padding: 24px;
+    background-color: #EEEEEE;
+    display: flex;
+    align-items: center;
 }
 
 .recomendation-box:nth-child(1) {
     min-width: 440px;
-    padding: 24px;
-    background-color: #EEEEEE;
     border-radius: 10px 0 0 10px;
 }
 
 .recomendation-box:nth-child(2) {
     min-width: 890px;
-    padding: 24px;
-    background-color: #EEEEEE;
     border-radius: 0 10px 10px 0;
+    justify-content: space-between;
+
 }
 
 .recomendation-box-content {
     display: flex;
     align-items: center;
+    gap: 30px;
 
 }
 
@@ -310,4 +318,15 @@ img {
 .recomendation-box-content img {
     width: 56px;
     height: auto;
+}
+
+.recomended-box-buton {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.recomended-box-buton a {
+    font-size: 20px;
+    color: inherit;
 }
