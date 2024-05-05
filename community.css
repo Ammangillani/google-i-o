@@ -165,6 +165,10 @@ hr {
     padding: 40px;
 }
 
+.searchbar-header {
+    margin: 0 0 3rem 0;
+}
+
 .searchbar-header span {
     font-size: 64px;
     color: #e8eaed;
