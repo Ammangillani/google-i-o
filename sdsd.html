@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Search</title>
+    <style>
+        .container-search {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"] {
+            width: calc(100% - 30px);
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        .loader {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #3498db;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-left: 5px;
+            vertical-align: middle;
+            display: none;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .results {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .results li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .results li:hover {
+            background-color: #f9f9f9;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-search">
+        <h1>Country Search</h1>
+        <div style="position: relative;">
+            <input type="text" id="searchInput" placeholder="Search for a country...">
+            <span id="searchIcon"
+                style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); cursor: pointer;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg>
+            </span>
+            <div id="loader" class="loader"></div>
+        </div>
+        <ul class="results" id="searchResults"></ul>
+    </div>
+
+</body>
+
+</html>
