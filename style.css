@@ -767,23 +767,24 @@ footer {
         width: 290px;
         height: 460px;
         color: #ffffff;
-        border: 1px solid yellow;
+        border: 1px solid #ffff;
         border-radius: 12px;
         display: flex;
         align-items: center;
         flex-direction: column;
+        padding: 5px;
     }
 
     .figure figure img {
-        width: 290px;
+        width: 280px;
     }
 
 
 
     .figure-icon {
-        display: flex;
-        align-items: center;
+        width: 100%;
         justify-content: flex-start;
+        flex-direction: column;
         gap: 30px;
         margin: 20px 0 0 0;
     }
