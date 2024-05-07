@@ -104,6 +104,14 @@ body {
     padding-right: 2.5rem;
 }
 
+.hemberg {
+    display: none;
+}
+
+#spanclose {
+    display: none;
+}
+
 hr {
     height: 2px;
     background-color: #fff;
