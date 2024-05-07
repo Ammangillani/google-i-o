@@ -550,6 +550,108 @@ footer {
 
 /* --------------------Media Qureis------------------ */
 @media (max-width:768px) {
+
+    .nav-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 14px 32px 14px 12px;
+        margin: 0 0 0 12px;
+    }
+
+    .nav-strart {
+        width: 28vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-svg a {
+        display: flex;
+        align-items: center;
+    }
+
+    .navigation {
+        width: 16vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navigation a,
+    .nav-end a {
+        text-decoration: none;
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #e8eaed;
+    }
+
+    .nav-end a {
+        color: #fff;
+    }
+
+    .nav-end {
+        width: 25vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-button button {
+        font-size: 16px;
+        padding: 14px 26px;
+        border-radius: 35px;
+        text-transform: capitalize;
+        color: #ffffff;
+        background-color: #2563EB;
+        border: none;
+        cursor: pointer;
+    }
+
+    .nav-button button:hover {
+        background-color: #4285F4;
+
+    }
+
+    .nav-select select {
+        font-size: 15px;
+        padding: 8px 25px 8px 16px;
+        background: #202124;
+        border: none;
+        color: #fff;
+        outline-color: #2563EB;
+        outline-width: 1px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
+        background-size: 1.5rem;
+        background-repeat: no-repeat;
+        background-position: right .5rem center;
+        padding-right: 2.5rem;
+    }
+
+    .hemberg {
+        display: none;
+    }
+
+    #spanclose {
+        display: none;
+    }
+
+    .hemberg {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 99999;
+    }
+
+    .hemberg i {
+        color: #FFF;
+        font-size: 22px;
+    }
+
     .hero-content p {
         font-size: 34px;
         color: #fff;
