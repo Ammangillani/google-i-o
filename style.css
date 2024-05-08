@@ -764,29 +764,26 @@ footer {
     }
 
     .figure {
-        width: 290px;
-        height: 460px;
-        color: #ffffff;
-        border: 1px solid #ffff;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #ffffff;
         border-radius: 12px;
         display: flex;
         align-items: center;
         flex-direction: column;
-        padding: 5px;
+        padding: 1rem;
     }
 
     .figure figure img {
-        width: 280px;
+        width: 100%;
     }
 
 
 
     .figure-icon {
         width: 100%;
-        justify-content: flex-start;
+        align-items: baseline;
         flex-direction: column;
-        gap: 30px;
-        margin: 20px 0 0 0;
     }
 
     .icon-svg {
@@ -798,75 +795,12 @@ footer {
         color: #ffffff;
     }
 
-    .last-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        gap: 50px;
-        margin: 5rem 0;
-    }
-
-    .last-wrapper-header {
-        display: flex;
-        align-items: flex-start;
-    }
-
-    .last-wrapper-header h2 {
-        font-size: 48px;
-        color: #ffffff;
-        font-weight: 400;
-
-    }
-
     .last-wrapper-anchors {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
+        flex-wrap: wrap;
 
     }
 
-    .last-wrapper-anchors a {
-        display: flex;
-        width: 335px;
-        height: 310px;
-        text-decoration: none;
-    }
-
-    .anchor-figures {
-        width: 327px;
-        padding: 12px;
-        color: #ffffff;
-
-    }
-
-    .anchor-figures figure,
-    img {
-        width: 303px;
-        height: auto;
-    }
-
-    .anchor-figures figcaption p {
-        font-size: 20px;
-        margin: 10px 0;
-        text-transform: capitalize;
-
-    }
-
-    .anchor-figures figcaption span {
-        font-size: 16px;
-        margin: 10px 0;
-        line-height: 1.6;
-    }
-
-    .last-wrapper-anchors a:hover {
-        border: 2px solid #ffffff;
-        border-radius: 0.75rem;
-    }
-
-    .last-wrapper-anchors a:hover img {
+    .last-wrapper-anchors a:active img {
         filter: invert(100%);
     }
 
