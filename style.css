@@ -769,28 +769,47 @@ footer {
         flex-wrap: wrap;
     }
 
+    .last-wrapper-anchors a {
+        width: 100%;
+    }
+
+    .anchor-figures {
+        width: 100%;
+        padding: 0;
+    }
+
+    .anchor-figures figure,
+    img {
+        width: 100%;
+    }
+
+
     .last-wrapper-anchors a:active img {
         filter: invert(100%);
     }
 
     footer {
-        padding: 2rem;
+        padding: 2rem 0.7rem;
     }
 
     .footer {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
+        flex-direction: column;
     }
 
     .footer-nav {
         width: 100%;
         display: flex;
         justify-content: flex-start;
-        align-items: center;
+        align-items: baseline;
+        flex-direction: column;
+        gap: 40px;
     }
 
     .footer-img {
+        width: 100%;
         display: flex;
         align-items: center;
     }
@@ -800,37 +819,23 @@ footer {
         height: 20px;
     }
 
-    .footer-nav a {
-        text-decoration: none;
-        color: #9aa0a6;
-        margin: 0 0 0 24px;
-    }
-
-    #footer-select select {
-        width: 10rem;
-        color: #9aa0a6;
-        margin-left: 20px;
-        border-bottom: 1px solid #9aa0a6;
-        padding-left: 0;
-        line-height: 16px;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
-        background-size: 1.5rem;
-        background-repeat: no-repeat;
-        background-position: right 0.5rem center;
-        padding-right: 2.5rem;
-    }
-
-    .footer-icon {
+    .footer-anchor {
         display: flex;
-        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
         gap: 20px;
     }
 
-    .footer-icon a i {
-        font-size: 25px;
-        color: #9aa0a6;
+    .footer-nav a {
+        margin: 0 0 0 0;
     }
+
+    #footer-select select {
+        margin-left: 0;
+    }
+
+    .footer-icon {
+        margin: 2rem 0 0 0;
+    }
+
 }
