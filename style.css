@@ -730,6 +730,10 @@ footer {
         width: 100%;
     }
 
+    .wrpper-img img {
+        height: 30vh;
+    }
+
     .card {
         flex-direction: column;
     }
