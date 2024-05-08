@@ -144,16 +144,15 @@ hr {
     padding: 12px;
     font-size: 20px;
     border-radius: 35px;
-    background: transparent;
+    background: #2563EB;
     color: #fff;
-    border: 2px solid #fff;
+    border: none;
     cursor: pointer;
 
 }
 
 .wrapper-content button:hover {
-    background: #EEEEEE;
-    color: #000;
+    background: #4285F4;
 }
 
 .wrapper-img {
@@ -163,6 +162,88 @@ hr {
 
 .community-card {
     padding: 40px;
+}
+
+.community-card-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.community-card-one1 {
+    width: 48%;
+    height: 360px;
+    display: flex;
+    border: 2px solid #fcfcfc;
+    border-radius: 0.80rem;
+    justify-content: space-between;
+
+}
+
+.community-card-content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #fff;
+    gap: 28px;
+
+}
+
+.community-card-content p {
+    font-size: 44px;
+
+}
+
+.community-card-content span {
+    font-size: 20px;
+
+}
+
+.community-card-content button {
+    padding: 1rem 1.5rem;
+    font-size: 20px;
+    border-radius: 35px;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    cursor: pointer;
+
+}
+
+.community-card-content button:hover {
+    background: #EEEEEE;
+    color: #000;
+}
+
+.community-card-img {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+}
+
+.community-card-img img {
+    width: 248px;
+    height: auto;
+    border-bottom-right-radius: 14px;
+}
+
+.community-card-img-2 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.community-card-img-2 img {
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
 }
 
 .searchbar-header {
@@ -524,4 +605,422 @@ footer {
 .footer-icon a i {
     font-size: 25px;
     color: #9AA0A6;
+}
+
+@media(max-width:786px) {
+
+    .hero-wrapper {
+        width: 100%;
+        height: 410px;
+        display: flex;
+        border-bottom: 2px solid #fcfcfc;
+        justify-content: space-between;
+
+    }
+
+    .wrapper-content {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: #fff;
+        gap: 28px;
+
+    }
+
+    .wrapper-content h1 {
+        font-size: 100px;
+
+    }
+
+    .wrapper-content span {
+        font-size: 20px;
+
+    }
+
+    .wrapper-content button {
+        padding: 12px;
+        font-size: 20px;
+        border-radius: 35px;
+        background: transparent;
+        color: #fff;
+        border: 2px solid #fff;
+        cursor: pointer;
+
+    }
+
+    .wrapper-content button:hover {
+        background: #EEEEEE;
+        color: #000;
+    }
+
+    .wrapper-img {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .community-card {
+        padding: 40px;
+    }
+
+    .searchbar-header {
+        margin: 0 0 3rem 0;
+    }
+
+    .searchbar-header span {
+        font-size: 64px;
+        color: #e8eaed;
+        margin-bottom: 20px;
+    }
+
+    .searchbar-header p {
+        font-size: 22px;
+        color: #e8eaed;
+        margin: 20px 0;
+    }
+
+    .searchbar-input input {
+        width: 960px;
+        max-height: 300px;
+        height: 3.5rem;
+        border: none;
+        border-radius: 35px;
+        padding: 1.5rem;
+        font-size: 16px;
+        color: #000;
+        outline: none;
+    }
+
+    .searchbar-input input::placeholder {
+        font-size: 16px;
+        color: #000;
+    }
+
+    .searchbar-input {
+        max-height: 200px;
+        overflow-y: scroll;
+    }
+
+    .searchbar-input::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    input[type="text"] {
+        width: calc(100% - 30px);
+        padding: 20px 50px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+
+    .loader {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border: 3px solid #f3f3f3;
+        border-top: 3px solid #3498db;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin-left: 5px;
+        vertical-align: middle;
+        display: none;
+        position: absolute;
+        top: 18px;
+        left: 10px;
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    .results {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .results li {
+        padding: 10px;
+        border-bottom: 1px solid #fff;
+        color: #fff;
+        font-size: 16px;
+    }
+
+    .results li:hover {
+        background-color: #292a2e;
+        cursor: pointer;
+    }
+
+    .searchbar-anchor {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem 0;
+    }
+
+    .searchbar-anchor a {
+        font-size: 24px;
+        color: #ffffff;
+    }
+
+    .card-wrapper {
+        width: 100%;
+        height: 900px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-top: 20px;
+    }
+
+    .card {
+        width: 380px;
+        height: 390px;
+        background: #EEEEEE;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        position: relative;
+        border: 1px solid #fcfcfc;
+        border-radius: 40px;
+        cursor: pointer;
+    }
+
+    .card-img {
+        display: flex;
+        align-items: center;
+    }
+
+    .card-img img {
+        width: 377px;
+        display: flex;
+        align-items: center;
+        border-radius: 40px;
+    }
+
+    .card-content {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: center;
+        padding: 1.5rem;
+        color: #202124;
+    }
+
+    .card-content span {
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: -.25px;
+
+    }
+
+    .card-content a {
+        color: #202124;
+        font-size: 20px;
+        text-transform: capitalize;
+        margin: 76px 0 0 0;
+    }
+
+    .card-content #first-anchor {
+        margin: 50px 0 0 0;
+    }
+
+    .group-wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .wrapeer-one {
+        width: 65%;
+        height: 508px;
+        display: flex;
+        border: 2px solid #fcfcfc;
+        border-radius: 0.80rem;
+        justify-content: space-between;
+
+    }
+
+    .wrpper-content {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: #fff;
+        gap: 28px;
+
+    }
+
+    .wrpper-content p {
+        font-size: 44px;
+
+    }
+
+    .wrpper-content span {
+        font-size: 20px;
+
+    }
+
+    .wrpper-content button {
+        width: 180px;
+        padding: 12px;
+        font-size: 20px;
+        border-radius: 35px;
+        background: transparent;
+        color: #fff;
+        border: 2px solid #fff;
+        cursor: pointer;
+
+    }
+
+    .wrpper-content button:hover {
+        background: #EEEEEE;
+        color: #000;
+    }
+
+    .wrpper-img {
+        width: 100%;
+    }
+
+    .wrpper-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .wrapeer-two {
+        width: 32%;
+        height: 508px;
+        display: flex;
+        justify-content: space-between;
+        border: 2px solid #fcfcfc;
+        border-radius: 0.80rem;
+        flex-direction: column;
+    }
+
+    .io-content {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        color: #fff;
+        gap: 28px;
+
+    }
+
+    .io-content p {
+        font-size: 44px;
+
+    }
+
+    .io-content span {
+        font-size: 20px;
+
+    }
+
+    .io-content button {
+        width: 180px;
+        padding: 12px;
+        font-size: 20px;
+        border-radius: 35px;
+        background: transparent;
+        color: #fff;
+        border: 2px solid #fff;
+        cursor: pointer;
+
+    }
+
+    .wrpper-content button:hover {
+        background: #EEEEEE;
+        color: #000;
+    }
+
+    .io-img {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+    }
+
+    .io-img img {
+        width: 198px;
+        height: 199px;
+        position: absolute;
+        bottom: 1px;
+        right: 1px;
+    }
+
+    footer {
+        padding: 2rem;
+    }
+
+    .footer {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .footer-nav {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .footer-img {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-img img {
+        width: 180px;
+        height: 20px;
+    }
+
+
+    .footer-nav a {
+        text-decoration: none;
+        color: #9AA0A6;
+        margin: 0 0 0 24px;
+
+    }
+
+    #footer-select select {
+        width: 10rem;
+        color: #9AA0A6;
+        margin-left: 20px;
+        border-bottom: 1px solid #9AA0A6;
+        padding-left: 0;
+        line-height: 16px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
+        background-size: 1.5rem;
+        background-repeat: no-repeat;
+        background-position: right .5rem center;
+        padding-right: 2.5rem;
+    }
+
+    .footer-icon {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer-icon a i {
+        font-size: 25px;
+        color: #9AA0A6;
+    }
 }
