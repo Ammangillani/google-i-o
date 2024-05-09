@@ -844,12 +844,12 @@ footer {
 
     .card-wrapper {
         width: 100%;
-        height: 900px;
+        height: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-        padding-top: 20px;
+        padding: 2rem 0;
         gap: 30px;
     }
 
@@ -912,149 +912,51 @@ footer {
         margin: 10px 0 0 0;
     }
 
+
     .group-wrapper {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        flex-direction: column;
+        gap: 20px;
     }
 
     .wrapeer-one {
-        width: 65%;
-        height: 508px;
-        display: flex;
-        border: 2px solid #fcfcfc;
-        border-radius: 0.80rem;
-        justify-content: space-between;
-
+        width: 100%;
     }
 
     .wrpper-content {
-        padding: 2rem;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        color: #fff;
-        gap: 28px;
-
+        padding: 1rem;
     }
 
-    .wrpper-content p {
-        font-size: 44px;
-
-    }
-
-    .wrpper-content span {
-        font-size: 20px;
-
-    }
-
-    .wrpper-content button {
-        width: 180px;
-        padding: 12px;
-        font-size: 20px;
-        border-radius: 35px;
-        background: transparent;
-        color: #fff;
-        border: 2px solid #fff;
-        cursor: pointer;
-
-    }
-
-    .wrpper-content button:hover {
-        background: #EEEEEE;
-        color: #000;
-    }
-
-    .wrpper-img {
+    .wrapeer-two {
         width: 100%;
     }
 
     .wrpper-img img {
-        width: 100%;
-        height: 100%;
-    }
-
-    .wrapeer-two {
-        width: 32%;
-        height: 508px;
-        display: flex;
-        justify-content: space-between;
-        border: 2px solid #fcfcfc;
-        border-radius: 0.80rem;
-        flex-direction: column;
-    }
-
-    .io-content {
-        padding: 2rem;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
-        color: #fff;
-        gap: 28px;
-
-    }
-
-    .io-content p {
-        font-size: 44px;
-
-    }
-
-    .io-content span {
-        font-size: 20px;
-
-    }
-
-    .io-content button {
-        width: 180px;
-        padding: 12px;
-        font-size: 20px;
-        border-radius: 35px;
-        background: transparent;
-        color: #fff;
-        border: 2px solid #fff;
-        cursor: pointer;
-
-    }
-
-    .wrpper-content button:hover {
-        background: #EEEEEE;
-        color: #000;
-    }
-
-    .io-img {
-        display: flex;
-        justify-content: flex-end;
-        position: relative;
-    }
-
-    .io-img img {
-        width: 198px;
-        height: 199px;
-        position: absolute;
-        bottom: 1px;
-        right: 1px;
+        height: 30vh;
+        object-fit: contain;
     }
 
     footer {
-        padding: 2rem;
+        padding: 2rem 0.7rem;
     }
 
     .footer {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
+        flex-direction: column;
     }
 
     .footer-nav {
         width: 100%;
         display: flex;
         justify-content: flex-start;
-        align-items: center;
+        align-items: baseline;
+        flex-direction: column;
+        gap: 40px;
     }
 
     .footer-img {
+        width: 100%;
         display: flex;
         align-items: center;
     }
@@ -1064,39 +966,23 @@ footer {
         height: 20px;
     }
 
-
-    .footer-nav a {
-        text-decoration: none;
-        color: #9AA0A6;
-        margin: 0 0 0 24px;
-
-    }
-
-    #footer-select select {
-        width: 10rem;
-        color: #9AA0A6;
-        margin-left: 20px;
-        border-bottom: 1px solid #9AA0A6;
-        padding-left: 0;
-        line-height: 16px;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
-        background-size: 1.5rem;
-        background-repeat: no-repeat;
-        background-position: right .5rem center;
-        padding-right: 2.5rem;
-    }
-
-    .footer-icon {
+    .footer-anchor {
         display: flex;
-        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
         gap: 20px;
     }
 
-    .footer-icon a i {
-        font-size: 25px;
-        color: #9AA0A6;
+    .footer-nav a {
+        margin: 0 0 0 0;
     }
+
+    #footer-select select {
+        margin-left: 0;
+    }
+
+    .footer-icon {
+        margin: 2rem 0 0 0;
+    }
+
 }
