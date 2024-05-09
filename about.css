@@ -387,3 +387,43 @@ footer {
     font-size: 25px;
     color: #9AA0A6;
 }
+
+@media(max-width:786px) {
+
+    .hero-wrapper {
+        height: fit-content;
+        flex-direction: column;
+
+    }
+
+    .wrapper-content {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .wrapper-content h1 {
+        font-size: 48px;
+
+    }
+
+    .wrapper-content span {
+        font-size: 16px;
+
+    }
+
+    .wrapper-content button {
+        padding: 8px 18px;
+        font-size: 14px;
+    }
+
+    .wrapper-img {
+        display: flex;
+        align-items: flex-end;
+        justify-content: end;
+    }
+
+    .wrapper-img img {
+        width: 100%;
+        object-fit: contain;
+    }
+}
