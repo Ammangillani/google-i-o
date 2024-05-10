@@ -893,12 +893,18 @@ footer {
         flex-direction: column;
     }
 
+    .last-wrapper-header h2 {
+        font-size: 28px;
+    }
+
     .last-wrapper-anchors {
         flex-wrap: wrap;
+        gap: 3rem;
     }
 
     .last-wrapper-anchors a {
         width: 100%;
+        height: auto;
     }
 
     .anchor-figures {
@@ -914,6 +920,7 @@ footer {
     .last-wrapper-anchors a:active img {
         filter: invert(100%);
     }
+
 
     footer {
         padding: 2rem 0.7rem;
