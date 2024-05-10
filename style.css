@@ -720,11 +720,26 @@ footer {
     }
 
     .mobile-menu a {
-        color: #ffffff;
-        font-size: 18px;
-        margin: 12px;
-        margin-top: 20px;
+        color: #e8eaed;
+        font-size: 16px;
+        margin: 1rem 1rem;
         text-decoration: none;
+    }
+
+    .mobile-menu a:nth-child(2) {
+        margin-top: 1.5rem;
+    }
+
+    .mob-select {
+        display: flex;
+        height: 100%;
+        align-items: flex-end;
+        padding-bottom: 20px;
+    }
+
+    .mob-select select {
+        font-size: 16px;
+        padding-right: 3rem;
     }
 
     .mobile-menu .closebtn {
