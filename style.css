@@ -131,8 +131,7 @@ body {
   background: #202124;
   border: none;
   color: #fff;
-  outline-color: #2563eb;
-  outline-width: 1px;
+  outline: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -141,6 +140,10 @@ body {
   background-repeat: no-repeat;
   background-position: right 0.5rem center;
   padding-right: 2.5rem;
+  padding-block: 10px;
+}
+.nav-select select:focus {
+  outline: 1px solid #2563eb;
 }
 
 .mobile-menu {
