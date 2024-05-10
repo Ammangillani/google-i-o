@@ -426,4 +426,168 @@ footer {
         width: 100%;
         object-fit: contain;
     }
+
+    .main {
+        padding: 1rem;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .header p {
+        font-size: 28px;
+        color: #e8eaed;
+        margin-bottom: 2rem;
+    }
+
+    .card-wrapper {
+        padding: 2rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .card-content {
+        width: 600px;
+    }
+
+    .card-content figure img {
+        width: 100%;
+        object-fit: contain;
+        height: 350px;
+
+    }
+
+    .card-content figcaption p {
+        font-size: 24px;
+        color: #fff;
+        margin: 0 0 12px 0;
+    }
+
+    .card-content figcaption span,
+    a,
+    #span {
+        font-size: 16px;
+        color: #fff;
+        line-height: 1.5;
+    }
+
+    .scrollspy {
+        width: 100vw;
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+        position: relative;
+        margin-top: 2rem;
+    }
+
+
+
+    .scrollspy-aside {
+        width: 30vw;
+        position: sticky;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        overflow-y: visible;
+    }
+
+    .aside-header h2 {
+        font-size: 64px;
+        color: #fff;
+        font-weight: 400;
+    }
+
+    .navbar {
+        color: #fff;
+    }
+
+    .navbar-nav {
+        list-style-type: none;
+        padding: 20px 0;
+    }
+
+    .nav-item {
+        width: fit-content;
+        margin-right: 20px;
+        padding: 20px 30px;
+        border: 2px solid #fff;
+        margin: 16px 0;
+        border-radius: 8px;
+        text-align: left;
+        line-height: 24px;
+    }
+
+    .nav-link {
+        letter-spacing: 0.85px;
+        font-size: 20px;
+        font-weight: 400;
+        text-decoration: none;
+        color: #fff;
+        transition: color 0.3s;
+
+    }
+
+    .nav-link:hover {
+        color: #f00505;
+    }
+
+    .nav-link.active,
+    .nav-link:hover.active {
+        color: #0ef087;
+    }
+
+    .scrollspy-content-wrapper {
+        width: 60vw;
+    }
+
+    .section {
+        width: 100%;
+        border: 2px solid #fcfcfc;
+        border-radius: 0.75rem;
+        margin-bottom: 20px;
+    }
+
+    .scrollspy-content {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 40px;
+        padding: 2rem;
+    }
+
+    .content-heading {
+        padding: 2rem;
+        color: #202124;
+        background: linear-gradient(90deg, #4285F4 -36.98%, #4285F4 22.31%, #34A853 78.95%, #34A853 132.93%);
+        border-radius: 10px 10px 0 0;
+        border-bottom: 2px solid #fcfcfc;
+    }
+
+    .content-heading h2 {
+        font-size: 44px;
+        font-weight: 400;
+    }
+
+    .content-paragraph {
+        padding: 14px 48px 14px 0;
+        border-bottom: 2px solid #fcfcfc;
+        color: #fff;
+    }
+
+    .content-paragraph p {
+        font-size: 16px;
+        margin: 1rem 0;
+        line-height: 1.6;
+        font-weight: 400;
+    }
+
+    .content-paragraph strong {
+        font-size: 24px;
+        font-weight: 400;
+
+    }
 }

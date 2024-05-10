@@ -1,425 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Meta information -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Google I/O 2024</title>
-    <!-- External Stylesheets -->
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=poppins"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
-    <!-- Favicon -->
-    <link
-      rel="shortcut icon"
-      href="./assest/favicon-grey-96x96.svg"
-      type="image/x-icon"
-    />
-  </head>
 
-  <body>
-    <span class="fullBody-blur"></span>
-    <!-- Main Container -->
-    <div class="container">
-      <!-- Navigation Bar -->
-      <div class="nav-bar">
-        <!-- Navigation Start -->
-        <div class="nav-strart">
-          <div class="lets-go-nav">
-            <!-- Mobile Menu Button -->
-            <span
-              ><i id="open" class="fa-solid fa-bars" onclick="openMenu()"></i
-            ></span>
-            <!-- Google I/O Logo -->
-            <div class="nav-svg">
-              <a href="./index.html">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="129"
-                  height="29"
-                  version="1.2"
-                >
-                  <defs>
-                    <clipPath id="cp1" clipPathUnits="userSpaceOnUse">
-                      <path d="M0 .5h128.33v28H0z" />
-                    </clipPath>
-                  </defs>
-                  <style>
-                    .s0 {
-                      fill: #202124;
-                    }
-                  </style>
-                  <g id="Clip-Path" clip-path="url(#cp1)">
-                    <filter id="f0">
-                      <feFlood flood-color="#fff" flood-opacity="1" />
-                      <feBlend in2="SourceGraphic" />
-                      <feComposite in2="SourceAlpha" operator="in" />
-                    </filter>
-                    <g id="Layer" filter="url(#f0)">
-                      <path
-                        fill-rule="evenodd"
-                        d="M0 12.2C0 6.5 4.8 1.9 10.5 1.9q.9 0 1.9.2 1 .2 1.9.5.9.4 1.7.9.8.6 1.5 1.3l-2 1.9q-.5-.4-1.1-.8-.5-.4-1.2-.7-.7-.2-1.3-.4-.7-.1-1.4-.1c-4.2 0-7.4 3.4-7.4 7.5 0 4.2 3.2 7.5 7.4 7.5 2.7 0 4.2-1.1 5.2-2 .8-.8 1.3-2 1.5-3.6h-6.7v-2.8h9.4q.2.9.2 1.8c0 2.1-.6 4.7-2.4 6.6-1.9 1.8-4.2 2.8-7.2 2.8C4.8 22.5 0 17.9 0 12.2zm27.8-2.9c3.6 0 6.6 2.8 6.6 6.6s-3 6.6-6.7 6.6c-3.6 0-6.6-2.8-6.6-6.6s3-6.6 6.6-6.6zm0 10.6c2.1 0 3.8-1.6 3.8-4s-1.7-4-3.8-4c-2 0-3.7 1.6-3.7 4s1.7 4 3.8 4zM42.3 9.3c3.6 0 6.6 2.8 6.6 6.6s-3 6.6-6.6 6.6c-3.7 0-6.7-2.8-6.7-6.6s3-6.6 6.7-6.6zm0 10.6c2 0 3.7-1.6 3.7-4s-1.7-4-3.7-4-3.8 1.6-3.8 4 1.8 4 3.8 4zm25.5 2.2h-2.9V2.6h2.9v19.5z"
-                        class="s0"
-                      />
-                      <path
-                        fill-rule="evenodd"
-                        d="M67.8 22.1h-2.9V2.6h2.9v19.5zm11.3-4 2.2 1.5q-.4.7-1 1.2-.6.6-1.4 1-.7.3-1.5.5t-1.6.2c-3.8 0-6.6-2.9-6.6-6.6 0-3.9 2.8-6.6 6.3-6.6 3.4 0 5.1 2.7 5.7 4.2l.3.7-8.9 3.7q1 2 3.2 2c1.5 0 2.5-.7 3.3-1.8zm-3.5-6.3c-1.5 0-3.6 1.3-3.5 3.9l5.9-2.5c-.3-.8-1.3-1.4-2.4-1.4zM62.9 9.7v11.9c0 4.9-2.9 6.9-6.3 6.9q-1 0-1.9-.3-.9-.2-1.7-.8-.7-.5-1.3-1.2-.6-.8-1-1.6l2.5-1.1c.5 1.1 1.6 2.4 3.4 2.4 2.2 0 3.5-1.4 3.5-3.9v-1H60c-.6.8-1.9 1.5-3.5 1.5-3.3 0-6.3-2.8-6.3-6.6 0-3.7 3-6.6 6.3-6.6 1.6 0 2.9.7 3.5 1.4h.1v-1zm-6.1 10.2zm0 0c2 0 3.5-1.6 3.5-4 0-2.3-1.5-4-3.5-4s-3.7 1.7-3.7 4 1.7 4 3.7 4zm43.2 2.3h-9.9V2.6h9.9zm8.1-9.8c0-5.6 4.6-10.1 10.1-10.1 5.6 0 10.1 4.5 10.1 10.1s-4.5 10.1-10.1 10.1c-5.5 0-10.1-4.5-10.1-10.1zm-4.9 11.9h-1.9L106.7.5h1.9z"
-                        class="s0"
-                      />
-                    </g>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Google I/O 2024</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=poppins" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="shortcut icon" href="./assest/favicon-grey-96x96.svg" type="image/x-icon" />
+</head>
+
+<body>
+  <span class="fullBody-blur"></span>
+  <!-- Main Container -->
+  <div class="container">
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+      <!-- Navigation Start -->
+      <div class="nav-strart">
+        <div class="lets-go-nav">
+          <!-- Mobile Menu Button -->
+          <span><i id="open" class="fa-solid fa-bars" onclick="openMenu()"></i></span>
+          <!-- Google I/O Logo -->
+          <div class="nav-svg">
+            <a href="./index.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="129" height="29" version="1.2">
+                <defs>
+                  <clipPath id="cp1" clipPathUnits="userSpaceOnUse">
+                    <path d="M0 .5h128.33v28H0z" />
+                  </clipPath>
+                </defs>
+                <style>
+                  .s0 {
+                    fill: #202124;
+                  }
+                </style>
+                <g id="Clip-Path" clip-path="url(#cp1)">
+                  <filter id="f0">
+                    <feFlood flood-color="#fff" flood-opacity="1" />
+                    <feBlend in2="SourceGraphic" />
+                    <feComposite in2="SourceAlpha" operator="in" />
+                  </filter>
+                  <g id="Layer" filter="url(#f0)">
+                    <path fill-rule="evenodd"
+                      d="M0 12.2C0 6.5 4.8 1.9 10.5 1.9q.9 0 1.9.2 1 .2 1.9.5.9.4 1.7.9.8.6 1.5 1.3l-2 1.9q-.5-.4-1.1-.8-.5-.4-1.2-.7-.7-.2-1.3-.4-.7-.1-1.4-.1c-4.2 0-7.4 3.4-7.4 7.5 0 4.2 3.2 7.5 7.4 7.5 2.7 0 4.2-1.1 5.2-2 .8-.8 1.3-2 1.5-3.6h-6.7v-2.8h9.4q.2.9.2 1.8c0 2.1-.6 4.7-2.4 6.6-1.9 1.8-4.2 2.8-7.2 2.8C4.8 22.5 0 17.9 0 12.2zm27.8-2.9c3.6 0 6.6 2.8 6.6 6.6s-3 6.6-6.7 6.6c-3.6 0-6.6-2.8-6.6-6.6s3-6.6 6.6-6.6zm0 10.6c2.1 0 3.8-1.6 3.8-4s-1.7-4-3.8-4c-2 0-3.7 1.6-3.7 4s1.7 4 3.8 4zM42.3 9.3c3.6 0 6.6 2.8 6.6 6.6s-3 6.6-6.6 6.6c-3.7 0-6.7-2.8-6.7-6.6s3-6.6 6.7-6.6zm0 10.6c2 0 3.7-1.6 3.7-4s-1.7-4-3.7-4-3.8 1.6-3.8 4 1.8 4 3.8 4zm25.5 2.2h-2.9V2.6h2.9v19.5z"
+                      class="s0" />
+                    <path fill-rule="evenodd"
+                      d="M67.8 22.1h-2.9V2.6h2.9v19.5zm11.3-4 2.2 1.5q-.4.7-1 1.2-.6.6-1.4 1-.7.3-1.5.5t-1.6.2c-3.8 0-6.6-2.9-6.6-6.6 0-3.9 2.8-6.6 6.3-6.6 3.4 0 5.1 2.7 5.7 4.2l.3.7-8.9 3.7q1 2 3.2 2c1.5 0 2.5-.7 3.3-1.8zm-3.5-6.3c-1.5 0-3.6 1.3-3.5 3.9l5.9-2.5c-.3-.8-1.3-1.4-2.4-1.4zM62.9 9.7v11.9c0 4.9-2.9 6.9-6.3 6.9q-1 0-1.9-.3-.9-.2-1.7-.8-.7-.5-1.3-1.2-.6-.8-1-1.6l2.5-1.1c.5 1.1 1.6 2.4 3.4 2.4 2.2 0 3.5-1.4 3.5-3.9v-1H60c-.6.8-1.9 1.5-3.5 1.5-3.3 0-6.3-2.8-6.3-6.6 0-3.7 3-6.6 6.3-6.6 1.6 0 2.9.7 3.5 1.4h.1v-1zm-6.1 10.2zm0 0c2 0 3.5-1.6 3.5-4 0-2.3-1.5-4-3.5-4s-3.7 1.7-3.7 4 1.7 4 3.7 4zm43.2 2.3h-9.9V2.6h9.9zm8.1-9.8c0-5.6 4.6-10.1 10.1-10.1 5.6 0 10.1 4.5 10.1 10.1s-4.5 10.1-10.1 10.1c-5.5 0-10.1-4.5-10.1-10.1zm-4.9 11.9h-1.9L106.7.5h1.9z"
+                      class="s0" />
                   </g>
-                </svg>
-              </a>
-            </div>
-
-            <!-- Navigation Links -->
-            <div class="navigation">
-              <a href="./explore.html">Explore</a>
-              <a href="./community.html">Community</a>
-              <a href="./about.html">About</a>
-            </div>
-          </div>
-        </div>
-        <!-- Navigation End -->
-        <div class="nav-end">
-          <div class="nav-khatam-hone-ko-hai">
-            <!-- Language Selection Dropdown -->
-            <div class="nav-select">
-              <select name="language" id="language">
-                <option value="English" selected>English</option>
-                <option value="Español">Español</option>
-                <option value="Português">Português</option>
-                <option value="Français">Français</option>
-                <option value="Indonesia">Indonesia</option>
-                <option value="한국어">한국어</option>
-                <option value="中文">中文</option>
-                <option value="日本語">日本語</option>
-              </select>
-            </div>
-            <!-- Sign In Link -->
-            <a href="">Sign In</a>
-            <!-- Register Button -->
-            <div class="nav-button">
-              <button>Register</button>
-            </div>
-          </div>
-        </div>
-        <!-- Mobile Menu -->
-        <div class="mobile-menu" id="mobileMenu">
-          <!-- Mobile Menu Content -->
-          <div class="mobile-header">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="129"
-              height="29"
-              version="1.2"
-            >
-              <defs>
-                <clipPath id="cp1" clipPathUnits="userSpaceOnUse">
-                  <path d="M0 .5h128.33v28H0z" />
-                </clipPath>
-              </defs>
-              <style>
-                .s0 {
-                  fill: #202124;
-                }
-              </style>
-              <g id="Clip-Path" clip-path="url(#cp1)">
-                <filter id="f0">
-                  <feFlood flood-color="#fff" flood-opacity="1" />
-                  <feBlend in2="SourceGraphic" />
-                  <feComposite in2="SourceAlpha" operator="in" />
-                </filter>
-                <g id="Layer" filter="url(#f0)">
-                  <path
-                    fill-rule="evenodd"
-                    d="M0 12.2C0 6.5 4.8 1.9 10.5 1.9q.9 0 1.9.2 1 .2 1.9.5.9.4 1.7.9.8.6 1.5 1.3l-2 1.9q-.5-.4-1.1-.8-.5-.4-1.2-.7-.7-.2-1.3-.4-.7-.1-1.4-.1c-4.2 0-7.4 3.4-7.4 7.5 0 4.2 3.2 7.5 7.4 7.5 2.7 0 4.2-1.1 5.2-2 .8-.8 1.3-2 1.5-3.6h-6.7v-2.8h9.4q.2.9.2 1.8c0 2.1-.6 4.7-2.4 6.6-1.9 1.8-4.2 2.8-7.2 2.8C4.8 22.5 0 17.9 0 12.2zm27.8-2.9c3.6 0 6.6 2.8 6.6 6.6s-3 6.6-6.7 6.6c-3.6 0-6.6-2.8-6.6-6.6s3-6.6 6.6-6.6zm0 10.6c2.1 0 3.8-1.6 3.8-4s-1.7-4-3.8-4c-2 0-3.7 1.6-3.7 4s1.7 4 3.8 4zM42.3 9.3c3.6 0 6.6 2.8 6.6 6.6s-3 6.6-6.6 6.6c-3.7 0-6.7-2.8-6.7-6.6s3-6.6 6.7-6.6zm0 10.6c2 0 3.7-1.6 3.7-4s-1.7-4-3.7-4-3.8 1.6-3.8 4 1.8 4 3.8 4zm25.5 2.2h-2.9V2.6h2.9v19.5z"
-                    class="s0"
-                  />
-                  <path
-                    fill-rule="evenodd"
-                    d="M67.8 22.1h-2.9V2.6h2.9v19.5zm11.3-4 2.2 1.5q-.4.7-1 1.2-.6.6-1.4 1-.7.3-1.5.5t-1.6.2c-3.8 0-6.6-2.9-6.6-6.6 0-3.9 2.8-6.6 6.3-6.6 3.4 0 5.1 2.7 5.7 4.2l.3.7-8.9 3.7q1 2 3.2 2c1.5 0 2.5-.7 3.3-1.8zm-3.5-6.3c-1.5 0-3.6 1.3-3.5 3.9l5.9-2.5c-.3-.8-1.3-1.4-2.4-1.4zM62.9 9.7v11.9c0 4.9-2.9 6.9-6.3 6.9q-1 0-1.9-.3-.9-.2-1.7-.8-.7-.5-1.3-1.2-.6-.8-1-1.6l2.5-1.1c.5 1.1 1.6 2.4 3.4 2.4 2.2 0 3.5-1.4 3.5-3.9v-1H60c-.6.8-1.9 1.5-3.5 1.5-3.3 0-6.3-2.8-6.3-6.6 0-3.7 3-6.6 6.3-6.6 1.6 0 2.9.7 3.5 1.4h.1v-1zm-6.1 10.2zm0 0c2 0 3.5-1.6 3.5-4 0-2.3-1.5-4-3.5-4s-3.7 1.7-3.7 4 1.7 4 3.7 4zm43.2 2.3h-9.9V2.6h9.9zm8.1-9.8c0-5.6 4.6-10.1 10.1-10.1 5.6 0 10.1 4.5 10.1 10.1s-4.5 10.1-10.1 10.1c-5.5 0-10.1-4.5-10.1-10.1zm-4.9 11.9h-1.9L106.7.5h1.9z"
-                    class="s0"
-                  />
                 </g>
-              </g>
-            </svg>
-            <span class="closebtn" onclick="closeMenu()">&times;</span>
+              </svg>
+            </a>
           </div>
-          <a href="./explore.html">Explore</a>
-          <a href="./community.html">Community</a>
-          <a href="./about.html">About</a>
+
+          <!-- Navigation Links -->
+          <div class="navigation">
+            <a href="./explore.html">Explore</a>
+            <a href="./community.html">Community</a>
+            <a href="./about.html">About</a>
+          </div>
         </div>
       </div>
-
-      <!-- Horizontal Line -->
-      <hr />
-      <!-- Hero Section -->
-      <div class="hero">
-        <div class="hero-wrapper">
-          <!-- Hero Content -->
-          <div class="hero-content">
-            <p>Tune in for Google I/O</p>
-            <p>May 14, 2024</p>
+      <!-- Navigation End -->
+      <div class="nav-end">
+        <div class="nav-khatam-hone-ko-hai">
+          <!-- Language Selection Dropdown -->
+          <div class="nav-select">
+            <select name="language" id="language">
+              <option value="English" selected>English</option>
+              <option value="Español">Español</option>
+              <option value="Português">Português</option>
+              <option value="Français">Français</option>
+              <option value="Indonesia">Indonesia</option>
+              <option value="한국어">한국어</option>
+              <option value="中文">中文</option>
+              <option value="日本語">日本語</option>
+            </select>
           </div>
-          <!-- Hero Button -->
-          <div class="hero-btn">
-            <p>
-              Watch live keynotes and on-demand sessions to hear our latest
-              announcements.
-            </p>
+          <!-- Sign In Link -->
+          <a href="">Sign In</a>
+          <!-- Register Button -->
+          <div class="nav-button">
             <button>Register</button>
           </div>
         </div>
-        <!-- Hero Top Image -->
-        <div class="hero-top-img">
-          <img src="assest/io24-homepage-hero-bg-dark.webp" alt="" />
+      </div>
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <!-- Mobile Menu Content -->
+        <div class="mobile-header">
+          <img src="./assest/Logo (1).svg" alt="">
+          <span class="closebtn" onclick="closeMenu()">&times;</span>
         </div>
-        <!-- Hero Bottom Image -->
-        <div class="hero-bottom-img">
-          <img src="assest/io24-homepage-hero-bg-bottom-dark.svg" alt="" />
+        <a href="./explore.html">Explore</a>
+        <a href="./community.html">Community</a>
+        <a href="./about.html">About</a>
+      </div>
+    </div>
+    <!-- Horizontal Line -->
+    <hr />
+    <!-- Hero Section -->
+    <div class="hero">
+      <div class="hero-wrapper">
+        <!-- Hero Content -->
+        <div class="hero-content">
+          <p>Tune in for Google I/O</p>
+          <p>May 14, 2024</p>
+        </div>
+        <!-- Hero Button -->
+        <div class="hero-btn">
+          <p>
+            Watch live keynotes and on-demand sessions to hear our latest
+            announcements.
+          </p>
+          <button>Register</button>
         </div>
       </div>
-      <!-- Second Section -->
-      <section class="second">
-        <!-- Timer Wrapper -->
-        <div class="timer-wrapper">
-          <!-- Day Countdown -->
-          <div class="relative">
-            <div class="day">
-              <h2 id="day">00</h2>
-              <span>Day</span>
-            </div>
-          </div>
-          <!-- Hour Countdown -->
-          <div class="relative">
-            <div class="day">
-              <h2 id="hours">00</h2>
-              <span>Hours</span>
-            </div>
-          </div>
-          <!-- Minute Countdown -->
-          <div class="relative">
-            <div class="day">
-              <h2 id="minutes">00</h2>
-              <span>Minutes</span>
-            </div>
-          </div>
-          <!-- Second Countdown -->
-          <div class="relative">
-            <div class="day">
-              <h2 id="secondes">00</h2>
-              <span>Seconds</span>
-            </div>
-          </div>
-        </div>
-        <!-- Group Wrapper -->
-        <div class="group-wrapper">
-          <!-- Wrapper One -->
-          <div class="wrapeer-one">
-            <!-- Content -->
-            <div class="wrpper-content">
-              <p>Plan your I/O</p>
-              <span
-                >Visit My I/O for saved content and recommendations based on
-                your personal interests.</span
-              >
-              <button>Get Started</button>
-            </div>
-            <!-- Image -->
-            <div class="wrpper-img">
-              <img src="./assest/io24-planio-cta-dark.svg" alt="" />
-            </div>
-          </div>
-          <!-- Wrapper Two -->
-          <div class="wrapeer-two">
-            <!-- Content -->
-            <div class="wrpper-content">
-              <p>Join a community group</p>
-              <span
-                >Meet developers, discover local groups, and build your global
-                network.</span
-              >
-              <button>Get Started</button>
-            </div>
-            <!-- Image -->
-            <div class="io-img">
-              <img src="./assest/io24-join-community-cta-dark.svg" alt="" />
-            </div>
-          </div>
-        </div>
-        <!-- Card Section -->
-        <div class="card">
-          <div class="card-header">
-            <h2>Join the keynotes online</h2>
-          </div>
-          <!-- Keynote Figures -->
-          <div class="figures-card-wrapper">
-            <div class="figure">
-              <!-- Keynote Image -->
-              <figure>
-                <img src="./assest/io24-featured-keynote-google.webp" alt="" />
-              </figure>
-              <!-- Keynote Details -->
-              <figcaption>
-                <span>10:00AM PT</span>
-                <h6>Google Keynote</h6>
-                <p>
-                  Tune in to find out how we're furthering our mission in to
-                  organize the world's information and make it universally
-                  accessible.
-                </p>
-              </figcaption>
-              <!-- Icon Links -->
-              <div class="figure-icon">
-                <div class="icon-svg">
-                  <svg
-                    aria-hidden="true"
-                    role="presentation"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="#Fff"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <!-- SVG Content -->
-                  </svg>
-                  <span>Add to Calendar</span>
-                </div>
-                <div class="icon-svg">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 16 20"
-                    fill="#202124"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="forced-white-color"
-                  >
-                    <!-- SVG Content -->
-                  </svg>
-                  <span>Save to My I/O</span>
-                </div>
-              </div>
-            </div>
-            <!-- Another Keynote Figure -->
-          </div>
-        </div>
-        <!-- Last Wrapper Section -->
-        <div class="last-wrapper">
-          <div class="last-wrapper-header">
-            <h2>What are you building for?</h2>
-          </div>
-          <!-- Anchors for different building types -->
-          <div class="last-wrapper-anchors">
-            <!-- Anchor for Mobile -->
-            <a href="">
-              <div class="anchor-figures">
-                <figure>
-                  <img src="./assest/io24-stacks-m-dark.webp" alt="" />
-                </figure>
-                <figcaption>
-                  <p>Mobile</p>
-                  <span
-                    >Develop for a range of audiences and form factors.</span
-                  >
-                </figcaption>
-              </div>
-            </a>
-            <!-- Anchor for Web -->
-            <a href="">
-              <div class="anchor-figures">
-                <figure>
-                  <img src="./assest/io24-stacks-w-dark.webp" alt="" />
-                </figure>
-                <figcaption>
-                  <p>Web</p>
-                  <span
-                    >Create fast, secure sites and apps for the open web.</span
-                  >
-                </figcaption>
-              </div>
-            </a>
-            <!-- Anchor for ML/AI -->
-            <a href="">
-              <div class="anchor-figures">
-                <figure>
-                  <img src="./assest/io24-stacks-a-dark.webp" alt="" />
-                </figure>
-                <figcaption>
-                  <p>ML/AI</p>
-                  <span
-                    >Access cutting-edge AI models and open source tools for
-                    machine learning.</span
-                  >
-                </figcaption>
-              </div>
-            </a>
-            <!-- Anchor for Cloud -->
-            <a href="">
-              <div class="anchor-figures">
-                <figure>
-                  <img src="./assest/io24-stacks-c-dark.webp" alt="" />
-                </figure>
-                <figcaption>
-                  <p>Cloud</p>
-                  <span>Simplify and scale end-to-end development.</span>
-                </figcaption>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-      <!-- Footer Section -->
-      <footer>
-        <div class="footer">
-          <div class="footer-nav">
-            <!-- Footer Logo -->
-            <div class="footer-img">
-              <img src="./assest/Logo-GoogleForDevelopers.svg" alt="" />
-            </div>
-            <!-- Footer Navigation Links -->
-            <div class="footer-anchor">
-              <a href="">I/O 2023</a>
-              <!-- Add other footer links here -->
-            </div>
-            <!-- Language Selection Dropdown -->
-            <div class="nav-select" id="footer-select">
-              <select name="language" id="language">
-                <option value="English" selected>English</option>
-                <!-- Add other language options here -->
-              </select>
-            </div>
-          </div>
-          <!-- Social Media Icons -->
-          <div class="footer-icon">
-            <a
-              href="https://www.youtube.com/user/GoogleDevelopers"
-              target="_blank"
-              ><i class="fa-brands fa-youtube"></i
-            ></a>
-            <a href="https://www.instagram.com/googlefordevs/" target="_blank"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-            <a
-              href="https://www.linkedin.com/showcase/googledevelopers/"
-              target="_blank"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-            <a href="https://twitter.com/googledevs" target="_blank">
-              <i class="fa-brands fa-x-twitter"></i
-            ></a>
-          </div>
-        </div>
-      </footer>
+      <!-- Hero Top Image -->
+      <div class="hero-top-img">
+        <img src="assest/io24-homepage-hero-bg-dark.webp" alt="" />
+      </div>
+      <!-- Hero Bottom Image -->
+      <div class="hero-bottom-img">
+        <img src="assest/io24-homepage-hero-bg-bottom-dark.svg" alt="" />
+      </div>
     </div>
-    <!-- JavaScript Files -->
-    <script src="./app.js"></script>
-    <script src="hemberg.js"></script>
-  </body>
+    <!-- Second Section -->
+    <section class="second">
+      <!-- Timer Wrapper -->
+      <div class="timer-wrapper">
+        <!-- Day Countdown -->
+        <div class="relative">
+          <div class="day">
+            <h2 id="day">00</h2>
+            <span>Day</span>
+          </div>
+        </div>
+        <!-- Hour Countdown -->
+        <div class="relative">
+          <div class="day">
+            <h2 id="hours">00</h2>
+            <span>Hours</span>
+          </div>
+        </div>
+        <!-- Minute Countdown -->
+        <div class="relative">
+          <div class="day">
+            <h2 id="minutes">00</h2>
+            <span>Minutes</span>
+          </div>
+        </div>
+        <!-- Second Countdown -->
+        <div class="relative">
+          <div class="day">
+            <h2 id="secondes">00</h2>
+            <span>Seconds</span>
+          </div>
+        </div>
+      </div>
+      <!-- Group Wrapper -->
+      <div class="group-wrapper">
+        <!-- Wrapper One -->
+        <div class="wrapeer-one">
+          <!-- Content -->
+          <div class="wrpper-content">
+            <p>Plan your I/O</p>
+            <span>Visit My I/O for saved content and recommendations based on
+              your personal interests.</span>
+            <button>Get Started</button>
+          </div>
+          <!-- Image -->
+          <div class="wrpper-img">
+            <img src="./assest/io24-planio-cta-dark.svg" alt="" />
+          </div>
+        </div>
+        <!-- Wrapper Two -->
+        <div class="wrapeer-two">
+          <!-- Content -->
+          <div class="wrpper-content">
+            <p>Join a community group</p>
+            <span>Meet developers, discover local groups, and build your global
+              network.</span>
+            <button>Get Started</button>
+          </div>
+          <!-- Image -->
+          <div class="io-img">
+            <img src="./assest/io24-join-community-cta-dark.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- Card Section -->
+      <div class="card">
+        <div class="card-header">
+          <h2>Join the keynotes online</h2>
+        </div>
+        <!-- Keynote Figures -->
+        <div class="figures-card-wrapper">
+          <div class="figure">
+            <!-- Keynote Image -->
+            <figure>
+              <img src="./assest/io24-featured-keynote-google.webp" alt="" />
+            </figure>
+            <!-- Keynote Details -->
+            <figcaption>
+              <span>10:00AM PT</span>
+              <h6>Google Keynote</h6>
+              <p>
+                Tune in to find out how we're furthering our mission in to
+                organize the world's information and make it universally
+                accessible.
+              </p>
+            </figcaption>
+            <!-- Icon Links -->
+            <div class="figure-icon">
+              <div class="icon-svg">
+                <svg aria-hidden="true" role="presentation" width="24" height="24" viewBox="0 0 24 24" fill="#fff"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M19.5 3H18V2.25C18 2.05109 17.921 1.86032 17.7803 1.71967C17.6397 1.57902 17.4489 1.5 17.25 1.5C17.0511 1.5 16.8603 1.57902 16.7197 1.71967C16.579 1.86032 16.5 2.05109 16.5 2.25V3H7.5V2.25C7.5 2.05109 7.42098 1.86032 7.28033 1.71967C7.13968 1.57902 6.94891 1.5 6.75 1.5C6.55109 1.5 6.36032 1.57902 6.21967 1.71967C6.07902 1.86032 6 2.05109 6 2.25V3H4.5C4.10218 3 3.72064 3.15804 3.43934 3.43934C3.15804 3.72064 3 4.10218 3 4.5V19.5C3 19.8978 3.15804 20.2794 3.43934 20.5607C3.72064 20.842 4.10218 21 4.5 21H19.5C19.8978 21 20.2794 20.842 20.5607 20.5607C20.842 20.2794 21 19.8978 21 19.5V4.5C21 4.10218 20.842 3.72064 20.5607 3.43934C20.2794 3.15804 19.8978 3 19.5 3ZM19.5 4.5V6H4.5V4.5H19.5ZM4.5 19.5V7.5H19.5V19.5H4.5Z"
+                    class="dark:fill-white forced-white-color !fill-white"></path>
+                </svg>
+                <span>Add to Calendar</span>
+              </div>
+              <div class="icon-svg">
+                <svg width="24" height="24" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="forced-white-color   ">
+                  <path d="M1 1v18l6.079-4.5 7.184 4.5V1H1Z" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"
+                    class="hcm-link-text-stroke !stroke-grey-bg black dark:stroke-grey-bg"></path>
+                </svg>
+                <span>Save to My I/O</span>
+              </div>
+            </div>
+          </div>
+          <div class="figure">
+            <!-- Keynote Image -->
+            <figure>
+              <img src="./assest/io24-featured-keynote-developer.webp" alt="" />
+            </figure>
+            <!-- Keynote Details -->
+            <figcaption>
+              <span>01:30PM PT</span>
+              <h6>Developer Keynote</h6>
+              <p>
+                Learn About Google's newesr developer tools and discover how they fuel innovation and enchance your
+                workflow for maxim...
+              </p>
+            </figcaption>
+            <!-- Icon Links -->
+            <div class="figure-icon">
+              <div class="icon-svg">
+                <svg aria-hidden="true" role="presentation" width="24" height="24" viewBox="0 0 24 24" fill="#fff"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M19.5 3H18V2.25C18 2.05109 17.921 1.86032 17.7803 1.71967C17.6397 1.57902 17.4489 1.5 17.25 1.5C17.0511 1.5 16.8603 1.57902 16.7197 1.71967C16.579 1.86032 16.5 2.05109 16.5 2.25V3H7.5V2.25C7.5 2.05109 7.42098 1.86032 7.28033 1.71967C7.13968 1.57902 6.94891 1.5 6.75 1.5C6.55109 1.5 6.36032 1.57902 6.21967 1.71967C6.07902 1.86032 6 2.05109 6 2.25V3H4.5C4.10218 3 3.72064 3.15804 3.43934 3.43934C3.15804 3.72064 3 4.10218 3 4.5V19.5C3 19.8978 3.15804 20.2794 3.43934 20.5607C3.72064 20.842 4.10218 21 4.5 21H19.5C19.8978 21 20.2794 20.842 20.5607 20.5607C20.842 20.2794 21 19.8978 21 19.5V4.5C21 4.10218 20.842 3.72064 20.5607 3.43934C20.2794 3.15804 19.8978 3 19.5 3ZM19.5 4.5V6H4.5V4.5H19.5ZM4.5 19.5V7.5H19.5V19.5H4.5Z"
+                    class="dark:fill-white forced-white-color !fill-white"></path>
+                </svg>
+                <span>Add to Calendar</span>
+              </div>
+              <div class="icon-svg">
+                <svg width="24" height="24" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="forced-white-color   ">
+                  <path d="M1 1v18l6.079-4.5 7.184 4.5V1H1Z" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"
+                    class="hcm-link-text-stroke !stroke-grey-bg black dark:stroke-grey-bg"></path>
+                </svg>
+                <span>Save to My I/O</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- Last Wrapper Section -->
+      <div class="last-wrapper">
+        <div class="last-wrapper-header">
+          <h2>What are you building for?</h2>
+        </div>
+        <!-- Anchors for different building types -->
+        <div class="last-wrapper-anchors">
+          <!-- Anchor for Mobile -->
+          <a href="">
+            <div class="anchor-figures">
+              <figure>
+                <img src="./assest/io24-stacks-m-dark.webp" alt="" />
+              </figure>
+              <figcaption>
+                <p>Mobile</p>
+                <span>Develop for a range of audiences and form factors.</span>
+              </figcaption>
+            </div>
+          </a>
+          <!-- Anchor for Web -->
+          <a href="">
+            <div class="anchor-figures">
+              <figure>
+                <img src="./assest/io24-stacks-w-dark.webp" alt="" />
+              </figure>
+              <figcaption>
+                <p>Web</p>
+                <span>Create fast, secure sites and apps for the open web.</span>
+              </figcaption>
+            </div>
+          </a>
+          <!-- Anchor for ML/AI -->
+          <a href="">
+            <div class="anchor-figures">
+              <figure>
+                <img src="./assest/io24-stacks-a-dark.webp" alt="" />
+              </figure>
+              <figcaption>
+                <p>ML/AI</p>
+                <span>Access cutting-edge AI models and open source tools for
+                  machine learning.</span>
+              </figcaption>
+            </div>
+          </a>
+          <!-- Anchor for Cloud -->
+          <a href="">
+            <div class="anchor-figures">
+              <figure>
+                <img src="./assest/io24-stacks-c-dark.webp" alt="" />
+              </figure>
+              <figcaption>
+                <p>Cloud</p>
+                <span>Simplify and scale end-to-end development.</span>
+              </figcaption>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer">
+        <div class="footer-nav">
+          <!-- Footer Logo -->
+          <div class="footer-img">
+            <img src="./assest/Logo-GoogleForDevelopers.svg" alt="" />
+          </div>
+          <!-- Footer Navigation Links -->
+          <div class="footer-anchor">
+            <a href="">I/O 2023</a>
+            <!-- Add other footer links here -->
+          </div>
+          <!-- Language Selection Dropdown -->
+          <div class="nav-select" id="footer-select">
+            <select name="language" id="language">
+              <option value="English" selected>English</option>
+              <!-- Add other language options here -->
+            </select>
+          </div>
+        </div>
+        <!-- Social Media Icons -->
+        <div class="footer-icon">
+          <a href="https://www.youtube.com/user/GoogleDevelopers" target="_blank"><i
+              class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.instagram.com/googlefordevs/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/showcase/googledevelopers/" target="_blank"><i
+              class="fa-brands fa-linkedin"></i></a>
+          <a href="https://twitter.com/googledevs" target="_blank">
+            <i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- JavaScript Files -->
+  <script src="./app.js"></script>
+  <script src="hemberg.js"></script>
+</body>
+
 </html>
