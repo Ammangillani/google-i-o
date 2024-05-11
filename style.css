@@ -368,6 +368,12 @@ hr {
     justify-content: flex-end;
 }
 
+.wrpper-img img {
+    width: 530px;
+    object-fit: contain;
+    height: 300px;
+}
+
 .wrapeer-two {
     width: 32%;
     height: 508px;
