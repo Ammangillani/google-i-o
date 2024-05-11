@@ -127,8 +127,7 @@ body {
     background-color: #4285f4;
 }
 
-.nav-select,
-.mob-select select {
+.nav-select select {
     font-size: 15px;
     padding: 8px 25px 8px 16px;
     background: #202124;
@@ -659,7 +658,7 @@ footer {
         background-color: #4285f4;
     }
 
-    .nav-select select {
+    .mob-select select {
         font-size: 15px;
         padding: 8px 25px 8px 16px;
         background: #202124;
