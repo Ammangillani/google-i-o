@@ -609,14 +609,16 @@ footer {
     .wrapper-content {
         width: 100%;
         padding: 1rem;
+        gap: 0;
     }
 
     .wrapper-content h1 {
         font-size: 48px;
+        margin-bottom: 16px;
 
     }
 
-    .wrapper-content span {
+    .wrapper-content p {
         font-size: 16px;
 
     }
@@ -635,6 +637,7 @@ footer {
     .wrapper-img img {
         width: 100%;
         object-fit: contain;
+        height: auto;
     }
 
     .main {
@@ -652,12 +655,12 @@ footer {
     }
 
     .card-wrapper {
-        padding: 2rem 0;
+        padding: 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        gap: 40px;
+        gap: 60px;
     }
 
     .card-content {
@@ -667,12 +670,12 @@ footer {
     .card-content figure img {
         width: 100%;
         object-fit: contain;
-        height: 350px;
+        height: auto;
 
     }
 
     .card-content figcaption p {
-        font-size: 24px;
+        font-size: 20px;
         color: #fff;
         margin: 0 0 12px 0;
     }
