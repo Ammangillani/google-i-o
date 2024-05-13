@@ -695,17 +695,18 @@ footer {
         justify-content: space-between;
         position: relative;
         margin-top: 2rem;
+        flex-direction: column;
     }
 
 
 
     .scrollspy-aside {
-        width: 30vw;
+        width: 100%;
         position: sticky;
         top: 0;
         left: 0;
         height: 100vh;
-        overflow-y: visible;
+        overflow-x: scroll;
     }
 
     .aside-header h2 {
