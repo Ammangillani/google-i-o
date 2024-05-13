@@ -724,6 +724,11 @@ footer {
         border: 2px solid #ffffff;
     }
 
+    .lets-go-nav {
+        justify-content: space-between;
+    }
+
+
     .mobile-menu a {
         color: #e8eaed;
         font-size: 16px;
