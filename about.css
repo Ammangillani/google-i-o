@@ -713,17 +713,16 @@ footer {
         left: 0;
         height: auto;
         overflow-x: scroll;
+        padding: 1rem 0;
+        background-color: #202124;
     }
 
     .aside-header h2 {
-        font-size: 64px;
-        color: #fff;
-        font-weight: 400;
         display: none;
     }
 
     .aside-header h3 {
-        font-size: 64px;
+        font-size: 48px;
         color: #fff;
         font-weight: 400;
         display: block;
@@ -736,7 +735,7 @@ footer {
     .navbar-nav {
         display: flex;
         list-style-type: none;
-        padding: 20px 0;
+        padding: 0;
         gap: 10px;
     }
 
@@ -745,7 +744,7 @@ footer {
         margin-right: 20px;
         padding: 10px 20px;
         border: 2px solid #fff;
-        margin: 16px 0;
+        margin: 8px 0;
         border-radius: 8px;
         text-align: center;
         line-height: 1;
@@ -771,7 +770,7 @@ footer {
     }
 
     .scrollspy-content-wrapper {
-        width: 60vw;
+        width: 90vw;
     }
 
     .section {
@@ -798,7 +797,7 @@ footer {
     }
 
     .content-heading h2 {
-        font-size: 44px;
+        font-size: 28px;
         font-weight: 400;
     }
 
@@ -816,7 +815,7 @@ footer {
     }
 
     .content-paragraph strong {
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 400;
 
     }
