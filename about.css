@@ -608,7 +608,7 @@ footer {
     .hero-wrapper {
         height: fit-content;
         flex-direction: column;
-
+        gap: 30px;
     }
 
     .wrapper-content {
@@ -634,9 +634,10 @@ footer {
     }
 
     .wrapper-img {
+        width: 70%;
         display: flex;
-        align-items: flex-end;
-        justify-content: end;
+        align-items: flex-start;
+        justify-content: start;
     }
 
     .wrapper-img img {
@@ -736,12 +737,13 @@ footer {
         display: flex;
         list-style-type: none;
         padding: 20px 0;
+        gap: 10px;
     }
 
     .nav-item {
-        width: fit-content;
+        min-width: 200px;
         margin-right: 20px;
-        padding: 10px;
+        padding: 10px 20px;
         border: 2px solid #fff;
         margin: 16px 0;
         border-radius: 8px;
@@ -751,7 +753,7 @@ footer {
 
     .nav-link {
         letter-spacing: 0.85px;
-        font-size: 20px;
+        font-size: 12px;
         font-weight: 400;
         text-decoration: none;
         color: #fff;
