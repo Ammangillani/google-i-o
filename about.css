@@ -719,6 +719,7 @@ footer {
     }
 
     .navbar-nav {
+        display: flex;
         list-style-type: none;
         padding: 20px 0;
     }
@@ -726,12 +727,12 @@ footer {
     .nav-item {
         width: fit-content;
         margin-right: 20px;
-        padding: 20px 30px;
+        padding: 10px;
         border: 2px solid #fff;
         margin: 16px 0;
         border-radius: 8px;
-        text-align: left;
-        line-height: 24px;
+        text-align: center;
+        line-height: 1;
     }
 
     .nav-link {
