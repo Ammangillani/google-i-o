@@ -200,6 +200,10 @@ hr {
     height: 408px;
 }
 
+#mobile-explore {
+    display: block;
+}
+
 .explore {
     padding: 3rem 3rem;
 }
@@ -550,5 +554,235 @@ img {
     .hemberg i {
         color: #fff;
         font-size: 22px;
+    }
+
+    .hero-wrapper {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        border-bottom: 2px solid #fcfcfc;
+        justify-content: space-between;
+        flex-direction: column;
+
+    }
+
+    .wrapper-content {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: #fff;
+        gap: 28px;
+
+    }
+
+    .wrapper-content h1 {
+        font-size: 48px;
+
+    }
+
+    .wrapper-content span {
+        font-size: 16px;
+
+    }
+
+    .wrapper-content button {
+        padding: 10px 12px;
+        font-size: 16px;
+        border-radius: 35px;
+        background: #2563EB;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+
+    }
+
+    .wrapper-content button:hover {
+        background: #4285F4;
+    }
+
+    .wrapper-img {
+        display: flex;
+        align-items: center;
+        min-height: 60vh;
+    }
+
+    .wrapper-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    #mobile-explore {
+        display: inline-block;
+    }
+
+    #desktop-explore {
+        display: none;
+    }
+
+    .explore {
+        padding: 3rem 3rem;
+    }
+
+    .last-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 50px;
+        margin: 5rem 0;
+    }
+
+    .last-wrapper-header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .last-wrapper-header h2 {
+        font-size: 48px;
+        color: #ffffff;
+        font-weight: 400;
+
+    }
+
+    .last-wrapper-header a {
+        font-size: 20px;
+        color: #ffffff;
+        font-weight: 400;
+
+    }
+
+    .last-wrapper-anchors {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+    }
+
+    .last-wrapper-anchors a {
+        display: flex;
+        width: 335px;
+        height: 310px;
+        text-decoration: none;
+    }
+
+    .anchor-figures {
+        width: 327px;
+        padding: 12px;
+        color: #ffffff;
+
+    }
+
+    .anchor-figures figure,
+    img {
+        width: 303px;
+        height: auto;
+    }
+
+    .anchor-figures figcaption p {
+        font-size: 20px;
+        margin: 10px 0;
+        text-transform: capitalize;
+
+    }
+
+    .anchor-figures figcaption span {
+        font-size: 16px;
+        margin: 10px 0;
+        line-height: 1.6;
+    }
+
+    .last-wrapper-anchors a:hover {
+        border: 2px solid #ffffff;
+        border-radius: 0.75rem;
+    }
+
+    .last-wrapper-anchors a:hover img {
+        filter: invert(100%);
+    }
+
+    .reomendation-wrapper,
+    .recomendetion-header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .recomendetion-header {
+        color: #ffffff;
+        font-weight: 400;
+    }
+
+    .recomendetion-header h6 {
+        font-size: 2.75rem;
+
+    }
+
+    .recomendetion-header p {
+        font-size: 1.3rem;
+    }
+
+    .recomendetion-header a {
+        color: inherit;
+
+    }
+
+    .recomendation-box-wrapper {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        color: #202124;
+    }
+
+    .recomendation-box {
+        min-height: 133px;
+        padding: 24px;
+        background-color: #EEEEEE;
+        display: flex;
+        align-items: center;
+    }
+
+    .recomendation-box:nth-child(1) {
+        min-width: 440px;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .recomendation-box:nth-child(2) {
+        min-width: 890px;
+        border-radius: 0 10px 10px 0;
+        justify-content: space-between;
+
+    }
+
+    .recomendation-box-content {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+    }
+
+    .recomendation-box-content p {
+        font-size: 24px;
+    }
+
+    .recomendation-box-content img {
+        width: 56px;
+        height: auto;
+    }
+
+    .recomended-box-buton {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .recomended-box-buton a {
+        font-size: 20px;
+        color: inherit;
     }
 }
