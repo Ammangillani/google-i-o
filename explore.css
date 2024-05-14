@@ -201,7 +201,7 @@ hr {
 }
 
 #mobile-explore {
-    display: block;
+    display: none;
 }
 
 .explore {
@@ -621,88 +621,53 @@ img {
     }
 
     .explore {
-        padding: 3rem 3rem;
+        padding: 3rem 20px;
     }
 
     .last-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        gap: 50px;
-        margin: 5rem 0;
+        margin: 0;
     }
 
     .last-wrapper-header {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
     }
 
     .last-wrapper-header h2 {
-        font-size: 48px;
-        color: #ffffff;
-        font-weight: 400;
-
+        font-size: 28px;
     }
 
     .last-wrapper-header a {
-        font-size: 20px;
-        color: #ffffff;
-        font-weight: 400;
-
+        font-size: 14px;
     }
 
     .last-wrapper-anchors {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-
+        flex-wrap: wrap;
+        gap: 3rem;
     }
 
     .last-wrapper-anchors a {
-        display: flex;
-        width: 335px;
-        height: 310px;
-        text-decoration: none;
+        width: 100%;
+        height: auto;
     }
 
     .anchor-figures {
-        width: 327px;
-        padding: 12px;
-        color: #ffffff;
-
+        width: 100%;
+        padding: 0;
     }
 
     .anchor-figures figure,
     img {
-        width: 303px;
-        height: auto;
+        width: 100%;
     }
 
-    .anchor-figures figcaption p {
-        font-size: 20px;
-        margin: 10px 0;
-        text-transform: capitalize;
-
-    }
-
-    .anchor-figures figcaption span {
-        font-size: 16px;
-        margin: 10px 0;
-        line-height: 1.6;
-    }
-
-    .last-wrapper-anchors a:hover {
-        border: 2px solid #ffffff;
-        border-radius: 0.75rem;
-    }
-
-    .last-wrapper-anchors a:hover img {
+    .last-wrapper-anchors a:active img {
         filter: invert(100%);
+    }
+
+    .reomendation-wrapper {
+        padding: 3rem 0;
     }
 
     .reomendation-wrapper,
@@ -710,7 +675,7 @@ img {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 40px;
+        gap: 15px;
     }
 
     .recomendetion-header {
@@ -719,12 +684,12 @@ img {
     }
 
     .recomendetion-header h6 {
-        font-size: 2.75rem;
+        font-size: 24px;
 
     }
 
     .recomendetion-header p {
-        font-size: 1.3rem;
+        font-size: 16px;
     }
 
     .recomendetion-header a {
@@ -735,8 +700,9 @@ img {
     .recomendation-box-wrapper {
         width: 100%;
         display: flex;
-        gap: 10px;
+        gap: 5px;
         color: #202124;
+        flex-direction: column;
     }
 
     .recomendation-box {
@@ -748,26 +714,25 @@ img {
     }
 
     .recomendation-box:nth-child(1) {
-        min-width: 440px;
-        border-radius: 10px 0 0 10px;
+        min-width: 100%;
+        border-radius: 10px 10px 0 0;
     }
 
     .recomendation-box:nth-child(2) {
-        min-width: 890px;
-        border-radius: 0 10px 10px 0;
+        min-width: 100%;
+        border-radius: 0 0 10px 10px;
         justify-content: space-between;
-
     }
 
     .recomendation-box-content {
         display: flex;
         align-items: center;
-        gap: 30px;
+        gap: 12px;
 
     }
 
     .recomendation-box-content p {
-        font-size: 24px;
+        font-size: 18px;
     }
 
     .recomendation-box-content img {
@@ -782,7 +747,7 @@ img {
     }
 
     .recomended-box-buton a {
-        font-size: 20px;
+        font-size: 12px;
         color: inherit;
     }
 }
