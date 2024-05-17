@@ -476,6 +476,7 @@ hr {
     justify-content: center;
     gap: 50px;
     margin: 5rem 0;
+
 }
 
 .last-wrapper-header {
@@ -495,6 +496,7 @@ hr {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .last-wrapper-anchors a {
