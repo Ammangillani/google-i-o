@@ -1,22 +1,25 @@
-// document.addEventListener("DOMContentLoaded", function () {
-//   const sections = document.querySelectorAll(".section");
-//   const navLinks = document.querySelectorAll(".nav-link");
+const sections = document.querySelectorAll(".section");
+const sidebarHeadings = document.querySelectorAll(".navbar-nav li");
 
-//   window.addEventListener("scroll", function () {
-//     let current = "";
-//     sections.forEach((section) => {
-//       const sectionTop = section.offsetTop;
-//       const sectionHeight = section.clientHeight;
-//       if (pageYOffset >= sectionTop - sectionHeight / 6) {
-//         current = section.getAttribute("id");
-//       }
-//     });
+const options = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.6,
+};
 
-//     navLinks.forEach((link) => {
-//       link.classList.remove("active");
-//       if (link.getAttribute("href").includes(current)) {
-//         link.classList.add("active");
-//       }
-//     });
-//   });
-// });
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      sidebarHeadings.forEach((heading) => {
+        heading.classList.remove("active");
+        if (heading.dataset.target === entry.target.id) {
+          heading.classList.add("active");
+        }
+      });
+    }
+  });
+}, options);
+console.log("sections", sections, observer);
+sections.forEach((section) => {
+  observer.observe(section);
+});
