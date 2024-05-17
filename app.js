@@ -1,4 +1,4 @@
-let daycount = new Date("may 15, 2024 00:07:00").getTime();
+let daycount = new Date("may 18, 2024 00:07:00").getTime();
 
 let count = setInterval(function () {
   let now = new Date().getTime();
