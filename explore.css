@@ -242,20 +242,20 @@ hr {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 10px;
 
 }
 
 .last-wrapper-anchors a {
     display: flex;
-    width: 335px;
+    width: 280px;
     height: 310px;
     text-decoration: none;
 }
 
 .anchor-figures {
-    width: 327px;
+    width: 100%;
     padding: 12px;
     color: #ffffff;
 
@@ -263,7 +263,7 @@ hr {
 
 .anchor-figures figure,
 img {
-    width: 303px;
+    width: 100%;
     height: auto;
 }
 
