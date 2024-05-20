@@ -374,7 +374,6 @@ img {
 .accordian-container {
     display: flex;
     gap: 30px;
-    flex-wrap: wrap;
     padding: 3rem 0;
 }
 
@@ -422,6 +421,14 @@ img {
     background-color: #202124;
 }
 
+.overflow-accordian {
+    height: 30vh;
+    overflow-y: auto;
+}
+
+.overflow-accordian::-webkit-scrollbar {
+    width: 1px;
+}
 
 .accordion-content ul {
     list-style: none;
@@ -452,6 +459,59 @@ img {
     transform: rotate(180deg);
 }
 
+
+.figures-card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.figure {
+    width: 320px;
+    height: 460px;
+    color: #ffffff;
+}
+
+.figure figure img {
+    width: 100%;
+}
+
+.figure figcaption span {
+    font-size: 12px;
+    margin: 10px 0 10px 0;
+    display: block;
+}
+
+.figure figcaption h6 {
+    font-size: 20px;
+    margin: 10px 0 10px 0;
+    font-weight: 400;
+}
+
+.figure figcaption p {
+    font-size: 16px;
+    margin: 10px 0 0 0;
+    line-height: 1.7;
+}
+
+.figure-icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    margin: 20px 0 0 0;
+}
+
+.icon-svg {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    font-size: 16px;
+    color: #ffffff;
+}
 
 
 /* ----------------------------------------Media quries------------------------------------------ */
