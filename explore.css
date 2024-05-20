@@ -409,7 +409,7 @@ img {
 .accordion-header h2 {
     font-size: 16px;
     color: #202124;
-
+    font-weight: 400;
 }
 
 .accordion-header .arrow {
