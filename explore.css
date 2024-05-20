@@ -2,16 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Sans Regular';
+    font-family: "Sans Regular";
 }
 
 @font-face {
-    font-family: 'Sans Regular';
+    font-family: "Sans Regular";
     font-style: normal;
     font-weight: normal;
-    src: local('Sans  Regular'), url(./assest/google-sans-cufonfonts-webfont/ProductSans-Medium.woff) format('woff');
+    src: local("Sans  Regular"),
+        url(./assest/google-sans-cufonfonts-webfont/ProductSans-Medium.woff) format("woff");
 }
-
 
 body {
     background: #fff;
@@ -142,9 +142,7 @@ body {
 hr {
     height: 2px;
     background-color: #fff;
-
 }
-
 
 .hero-wrapper {
     width: 100%;
@@ -152,7 +150,6 @@ hr {
     display: flex;
     border-bottom: 2px solid #fcfcfc;
     justify-content: space-between;
-
 }
 
 .wrapper-content {
@@ -162,32 +159,28 @@ hr {
     align-items: flex-start;
     color: #fff;
     gap: 28px;
-
 }
 
 .wrapper-content h1 {
     font-size: 100px;
-
 }
 
 .wrapper-content span {
     font-size: 20px;
-
 }
 
 .wrapper-content button {
     padding: 16px 20px;
     font-size: 20px;
     border-radius: 35px;
-    background: #2563EB;
+    background: #2563eb;
     color: #fff;
     border: none;
     cursor: pointer;
-
 }
 
 .wrapper-content button:hover {
-    background: #4285F4;
+    background: #4285f4;
 }
 
 .wrapper-img {
@@ -228,14 +221,12 @@ hr {
     font-size: 48px;
     color: #ffffff;
     font-weight: 400;
-
 }
 
 .last-wrapper-header a {
     font-size: 20px;
     color: #ffffff;
     font-weight: 400;
-
 }
 
 .last-wrapper-anchors {
@@ -244,7 +235,6 @@ hr {
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-
 }
 
 .last-wrapper-anchors a {
@@ -258,7 +248,6 @@ hr {
     width: 100%;
     padding: 12px;
     color: #ffffff;
-
 }
 
 .anchor-figures figure,
@@ -271,7 +260,6 @@ img {
     font-size: 20px;
     margin: 10px 0;
     text-transform: capitalize;
-
 }
 
 .anchor-figures figcaption span {
@@ -308,7 +296,6 @@ img {
 
 .recomendetion-header h6 {
     font-size: 2.75rem;
-
 }
 
 .recomendetion-header p {
@@ -317,7 +304,6 @@ img {
 
 .recomendetion-header a {
     color: inherit;
-
 }
 
 .recomendation-box-wrapper {
@@ -330,7 +316,7 @@ img {
 .recomendation-box {
     min-height: 133px;
     padding: 24px;
-    background-color: #EEEEEE;
+    background-color: #eeeeee;
     display: flex;
     align-items: center;
 }
@@ -344,14 +330,12 @@ img {
     min-width: 890px;
     border-radius: 0 10px 10px 0;
     justify-content: space-between;
-
 }
 
 .recomendation-box-content {
     display: flex;
     align-items: center;
     gap: 30px;
-
 }
 
 .recomendation-box-content p {
@@ -374,7 +358,6 @@ img {
     color: inherit;
 }
 
-
 .accordian-container {
     display: flex;
     gap: 30px;
@@ -394,7 +377,6 @@ img {
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     border-radius: 14px;
-
 }
 
 .accordion-header {
@@ -402,7 +384,7 @@ img {
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     cursor: pointer;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -465,20 +447,21 @@ img {
 
 .figures-card-wrapper {
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-around;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     flex-wrap: wrap;
 }
 
 .figure {
     width: 320px;
-    height: 460px;
+    height: 360px;
     color: #ffffff;
 }
 
 .figure figure img {
     width: 100%;
+    border-radius: 14px;
 }
 
 .figure figcaption span {
@@ -516,6 +499,67 @@ img {
     color: #ffffff;
 }
 
+
+footer {
+    padding: 2rem;
+}
+
+.footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.footer-nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer-img {
+    display: flex;
+    align-items: center;
+}
+
+.footer-img img {
+    width: 180px;
+    height: 20px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #9aa0a6;
+    margin: 0 0 0 24px;
+}
+
+#footer-select select {
+    width: 10rem;
+    color: #9aa0a6;
+    margin-left: 20px;
+    border-bottom: 1px solid #9aa0a6;
+    padding-left: 0;
+    line-height: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
+    background-size: 1.5rem;
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    padding-right: 2.5rem;
+}
+
+.footer-icon {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-icon a i {
+    font-size: 25px;
+    color: #9aa0a6;
+}
 
 /* ----------------------------------------Media quries------------------------------------------ */
 
@@ -638,7 +682,6 @@ img {
         justify-content: space-between;
     }
 
-
     .mobile-menu a {
         color: #e8eaed;
         font-size: 16px;
@@ -710,7 +753,6 @@ img {
         border-bottom: 2px solid #fcfcfc;
         justify-content: space-between;
         flex-direction: column;
-
     }
 
     .wrapper-content {
@@ -720,32 +762,28 @@ img {
         align-items: flex-start;
         color: #fff;
         gap: 28px;
-
     }
 
     .wrapper-content h1 {
         font-size: 48px;
-
     }
 
     .wrapper-content span {
         font-size: 16px;
-
     }
 
     .wrapper-content button {
         padding: 10px 12px;
         font-size: 16px;
         border-radius: 35px;
-        background: #2563EB;
+        background: #2563eb;
         color: #fff;
         border: none;
         cursor: pointer;
-
     }
 
     .wrapper-content button:hover {
-        background: #4285F4;
+        background: #4285f4;
     }
 
     .wrapper-img {
@@ -813,6 +851,10 @@ img {
         filter: invert(100%);
     }
 
+    .Recommendation-filter {
+        padding: 3rem 20px;
+    }
+
     .reomendation-wrapper {
         padding: 3rem 0;
     }
@@ -832,7 +874,6 @@ img {
 
     .recomendetion-header h6 {
         font-size: 24px;
-
     }
 
     .recomendetion-header p {
@@ -841,7 +882,6 @@ img {
 
     .recomendetion-header a {
         color: inherit;
-
     }
 
     .recomendation-box-wrapper {
@@ -855,7 +895,7 @@ img {
     .recomendation-box {
         min-height: 133px;
         padding: 24px;
-        background-color: #EEEEEE;
+        background-color: #eeeeee;
         display: flex;
         align-items: center;
     }
@@ -875,7 +915,6 @@ img {
         display: flex;
         align-items: center;
         gap: 12px;
-
     }
 
     .recomendation-box-content p {
@@ -896,5 +935,64 @@ img {
     .recomended-box-buton a {
         font-size: 12px;
         color: inherit;
+    }
+
+    .accordian-container {
+        flex-direction: column;
+    }
+
+    .accordion-wrapper {
+        display: none;
+    }
+
+
+    footer {
+        padding: 2rem 0.7rem;
+    }
+
+    .footer {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .footer-nav {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: baseline;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer-img {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-img img {
+        width: 180px;
+        height: 20px;
+    }
+
+    .footer-anchor {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-nav a {
+        margin: 0 0 0 0;
+    }
+
+    #footer-select select {
+        margin-left: 0;
+    }
+
+    .footer-icon {
+        margin: 2rem 0 0 0;
     }
 }
