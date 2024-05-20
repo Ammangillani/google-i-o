@@ -426,11 +426,44 @@ img {
     margin-bottom: 10px;
     font-size: 16px;
     color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
-.accordion-content li input label {
+.accordion-content li input[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+.accordion-content li input[type="checkbox"]:checked {
+    background-color: #2563eb;
+}
+
+.accordion-content li input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.accordion-content li label {
     font-size: 16px;
     color: #ffffff;
+    background: #202124;
 }
 
 .accordion-content li:last-child {
@@ -447,9 +480,9 @@ img {
 
 .figures-card-wrapper {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 30px;
+    /* justify-content: space-around; */
+    align-items: flex-start;
+    gap: 40px;
     flex-wrap: wrap;
 }
 
