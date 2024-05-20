@@ -371,10 +371,17 @@ img {
 }
 
 
-.accordion-container {
+.accordian-container {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
+    padding: 3rem 0;
+}
+
+.accordion-wrapper {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
 }
 
 .accordion {
