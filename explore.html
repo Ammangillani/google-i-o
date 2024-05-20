@@ -202,7 +202,137 @@
             <div class="keynote-container">
             </div>
             <div class="accordian-container">
+                <div class="container">
+                    <!-- First Accordion -->
+                    <div class="accordion" id="accordion1">
+                        <div class="accordion-header" onclick="toggleAccordion('accordion1')">
+                            <h2>Focus 1</h2>
+                            <span class="arrow">&#9662;</span>
+                        </div>
+                        <div class="accordion-content">
+                            <input type="text" id="search1" placeholder="Search..."
+                                onkeyup="filterList('search1', 'checkbox-list1', 'box-container1')">
+                            <ul id="checkbox-list1">
+                                <li><input type="checkbox" id="item1-1"> <label for="item1-1">Item 1-1</label></li>
+                                <li><input type="checkbox" id="item1-2"> <label for="item1-2">Item 1-2</label></li>
+                                <li><input type="checkbox" id="item1-3"> <label for="item1-3">Item 1-3</label></li>
+                                <li><input type="checkbox" id="item1-4"> <label for="item1-4">Item 1-4</label></li>
+                                <li><input type="checkbox" id="item1-5"> <label for="item1-5">Item 1-5</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="box-container" id="box-container1">
+                        <div class="box" id="box-item1-1">Box 1-1</div>
+                        <div class="box" id="box-item1-2">Box 1-2</div>
+                        <div class="box" id="box-item1-3">Box 1-3</div>
+                        <div class="box" id="box-item1-4">Box 1-4</div>
+                        <div class="box" id="box-item1-5">Box 1-5</div>
+                    </div>
 
+                    <!-- Second Accordion -->
+                    <div class="accordion" id="accordion2">
+                        <div class="accordion-header" onclick="toggleAccordion('accordion2')">
+                            <h2>Focus 2</h2>
+                            <span class="arrow">&#9662;</span>
+                        </div>
+                        <div class="accordion-content">
+                            <input type="text" id="search2" placeholder="Search..."
+                                onkeyup="filterList('search2', 'checkbox-list2', 'box-container2')">
+                            <ul id="checkbox-list2">
+                                <li><input type="checkbox" id="item2-1"> <label for="item2-1">Item 2-1</label></li>
+                                <li><input type="checkbox" id="item2-2"> <label for="item2-2">Item 2-2</label></li>
+                                <li><input type="checkbox" id="item2-3"> <label for="item2-3">Item 2-3</label></li>
+                                <li><input type="checkbox" id="item2-4"> <label for="item2-4">Item 2-4</label></li>
+                                <li><input type="checkbox" id="item2-5"> <label for="item2-5">Item 2-5</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="box-container" id="box-container2">
+                        <div class="box" id="box-item2-1">Box 2-1</div>
+                        <div class="box" id="box-item2-2">Box 2-2</div>
+                        <div class="box" id="box-item2-3">Box 2-3</div>
+                        <div class="box" id="box-item2-4">Box 2-4</div>
+                        <div class="box" id="box-item2-5">Box 2-5</div>
+                    </div>
+
+                    <!-- Third Accordion -->
+                    <div class="accordion" id="accordion3">
+                        <div class="accordion-header" onclick="toggleAccordion('accordion3')">
+                            <h2>Focus 3</h2>
+                            <span class="arrow">&#9662;</span>
+                        </div>
+                        <div class="accordion-content">
+                            <input type="text" id="search3" placeholder="Search..."
+                                onkeyup="filterList('search3', 'checkbox-list3', 'box-container3')">
+                            <ul id="checkbox-list3">
+                                <li><input type="checkbox" id="item3-1"> <label for="item3-1">Item 3-1</label></li>
+                                <li><input type="checkbox" id="item3-2"> <label for="item3-2">Item 3-2</label></li>
+                                <li><input type="checkbox" id="item3-3"> <label for="item3-3">Item 3-3</label></li>
+                                <li><input type="checkbox" id="item3-4"> <label for="item3-4">Item 3-4</label></li>
+                                <li><input type="checkbox" id="item3-5"> <label for="item3-5">Item 3-5</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="box-container" id="box-container3">
+                        <div class="box" id="box-item3-1">Box 3-1</div>
+                        <div class="box" id="box-item3-2">Box 3-2</div>
+                        <div class="box" id="box-item3-3">Box 3-3</div>
+                        <div class="box" id="box-item3-4">Box 3-4</div>
+                        <div class="box" id="box-item3-5">Box 3-5</div>
+                    </div>
+
+                    <!-- Fourth Accordion -->
+                    <div class="accordion" id="accordion4">
+                        <div class="accordion-header" onclick="toggleAccordion('accordion4')">
+                            <h2>Focus 4</h2>
+                            <span class="arrow">&#9662;</span>
+                        </div>
+                        <div class="accordion-content">
+                            <input type="text" id="search4" placeholder="Search..."
+                                onkeyup="filterList('search4', 'checkbox-list4', 'box-container4')">
+                            <ul id="checkbox-list4">
+                                <li><input type="checkbox" id="item4-1"> <label for="item4-1">Item 4-1</label></li>
+                                <li><input type="checkbox" id="item4-2"> <label for="item4-2">Item 4-2</label></li>
+                                <li><input type="checkbox" id="item4-3"> <label for="item4-3">Item 4-3</label></li>
+                                <li><input type="checkbox" id="item4-4"> <label for="item4-4">Item 4-4</label></li>
+                                <li><input type="checkbox" id="item4-5"> <label for="item4-5">Item 4-5</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="box-container" id="box-container4">
+                        <div class="box" id="box-item4-1">Box 4-1</div>
+                        <div class="box" id="box-item4-2">Box 4-2</div>
+                        <div class="box" id="box-item4-3">Box 4-3</div>
+                        <div class="box" id="box-item4-4">Box 4-4</div>
+                        <div class="box" id="box-item4-5">Box 4-5</div>
+                    </div>
+
+                    <!-- Fifth Accordion -->
+                    <div class="accordion" id="accordion5">
+                        <div class="accordion-header" onclick="toggleAccordion('accordion5')">
+                            <h2>Focus 5</h2>
+                            <span class="arrow">&#9662;</span>
+                        </div>
+                        <div class="accordion-content">
+                            <input type="text" id="search5" placeholder="Search..."
+                                onkeyup="filterList('search5', 'checkbox-list5', 'box-container5')">
+                            <ul id="checkbox-list5">
+                                <li><input type="checkbox" id="item5-1"> <label for="item5-1">Item 5-1</label></li>
+                                <li><input type="checkbox" id="item5-2"> <label for="item5-2">Item 5-2</label></li>
+                                <li><input type="checkbox" id="item5-3"> <label for="item5-3">Item 5-3</label></li>
+                                <li><input type="checkbox" id="item5-4"> <label for="item5-4">Item 5-4</label></li>
+                                <li><input type="checkbox" id="item5-5"> <label for="item5-5">Item 5-5</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="box-container" id="box-container5">
+                        <div class="box" id="box-item5-1">Box 5-1</div>
+                        <div class="box" id="box-item5-2">Box 5-2</div>
+                        <div class="box" id="box-item5-3">Box 5-3</div>
+                        <div class="box" id="box-item5-4">Box 5-4</div>
+                        <div class="box" id="box-item5-5">Box 5-5</div>
+                    </div>
+                </div>
             </div>
         </section>
 
