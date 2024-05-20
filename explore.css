@@ -386,10 +386,12 @@ img {
 
 .accordion {
     width: 300px;
-    border: 1px solid #ccc;
+    border: 2px solid #007bff;
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 14px;
+
 }
 
 .accordion-header {
@@ -397,9 +399,12 @@ img {
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    background-color: #007bff;
-    color: white;
+    background-color: #FFFFFF;
+    color: #202124;
     cursor: pointer;
+    border-radius: 14px;
+    border: 2px solid #007bff;
+
 }
 
 .accordion-header .arrow {
@@ -440,24 +445,6 @@ img {
 
 .accordion.open .accordion-header .arrow {
     transform: rotate(180deg);
-}
-
-.box-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.box {
-    width: 200px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #007bff;
-    color: white;
-    border-radius: 5px;
-    display: none;
 }
 
 
