@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-analytics.js";
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -12,8 +12,8 @@ const firebaseConfig = {
   projectId: "io-goggle",
   storageBucket: "io-goggle.appspot.com",
   messagingSenderId: "50870650879",
-  appId: "1:50870650879:web:dde5eaae2278dada6d09ca",
-  measurementId: "G-J2M661M5M5",
+  appId: "1:50870650879:web:626d920affd17e0c6d09ca",
+  measurementId: "G-0GJFVY54JW",
 };
 
 // Initialize Firebase
