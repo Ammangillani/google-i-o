@@ -3,10 +3,9 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/fireba
 import {
   getAuth,
   GoogleAuthProvider,
-  signInWithPopup,
+  signInWithRedirect,
+  getRedirectResult,
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -22,22 +21,24 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 auth.languageCode = "en";
-// To apply the default browser preference instead of explicitly setting it.
-// auth.useDeviceLanguage();
 const provider = new GoogleAuthProvider();
 
 const loginBtn = document.getElementById("google-signin-btn");
 loginBtn.addEventListener("click", function () {
-  signInWithPopup(auth, provider)
-    .then((result) => {
+  signInWithRedirect(auth, provider);
+});
+
+getRedirectResult(auth)
+  .then((result) => {
+    if (result !== null) {
       // This gives you a Google Access Token. You can use it to access the Google API.
       const credential = GoogleAuthProvider.credentialFromResult(result);
       const user = result.user;
       console.log(user);
       window.location.href = "../testapp.html";
-    })
-    .catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-    });
-});
+    }
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+  });
